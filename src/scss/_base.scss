@@ -1,0 +1,138 @@
+html {
+		font-size: 16px;
+}
+
+body {
+		color: $color-3;
+		/*font-family: 'Roboto', Arial, sans-serif !important;*/
+		font-family: 'Helvetica Neue', Arial, sans-serif !important;
+		// font-size: 62.5%; // 1em = 10px
+		
+}
+
+h1,h2,h3,h4,h5,h6{
+	/*font-family: 'Open Sans Condensed', sans-serif !important;*/
+	font-family: 'Helvetica Neue Condensed', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+a {
+		color: $color-4;
+		text-decoration: underline;
+		cursor: pointer;
+}
+
+a:hover {
+		color: $color-5;
+}
+
+canvas {
+		display: block;
+}
+
+// scss-lint:disable ImportantRule, SingleLinePerSelector, SelectorFormat
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+		display: none !important;
+}
+// scss-lint:enable ImportantRule, SingleLinePerSelector, SelectorFormat
+
+
+.ngview{
+	overflow: auto !important;
+}
+
+
+/*ul{
+	list-style: none;
+	li{
+		display:table;
+		width:100%;
+		label{
+			display:table-cell;
+			width:20%;
+		}
+		span{
+			display:table-cell;
+			width:80%;
+		}
+	}
+}
+*/
+
+.full-height{
+		height: 100% important;
+}
+
+.white-bg{
+		background: rgb(255, 255, 255) !important;
+}
+
+// White text
+.white-fg,
+.white-text {
+	color: rgb(255, 255, 255) !important;
+
+	&.secondary-text,
+	.secondary-text,
+	&.icon,
+	.icon {
+		color: rgba(255, 255, 255, 0.70) !important;
+	}
+
+	&.hint-text,
+	.hint-text,
+	&.disabled-text,
+	.disabled-text {
+		color: rgba(255, 255, 255, 0.30) !important;
+	}
+
+	&.divider,
+	.divider,
+	&.faint-text,
+	.faint-text {
+		color: rgba(255, 255, 255, 0.12) !important;
+	}
+}
+
+
+#content{
+	background: #fff !important;
+}
+
+.drop-zone{
+	height: 200px;
+	padding: 10px;
+	border: 3px #ccc dashed;
+	color: #aaa;
+	text-align: center;
+	border-radius: 3px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #ededed;
+	cursor: pointer;
+}
+
+._md-datepicker-floating-label._md-datepicker-has-calendar-icon > label:not(.md-no-float):not(.md-container-ignore){
+	right:inherit;
+}
+md-input-container{
+	width:100%;
+	margin:15px 0 0 0;
+	._md-datepicker-floating-label._md-datepicker-has-calendar-icon .md-input-message-animation{
+		margin:0;
+	}
+	md-datepicker{
+		width:100%;
+		.md-datepicker-button{
+			display:none;
+		}
+		.md-datepicker-input-container{
+			width:100%;
+			padding:0;
+			margin:0;
+			.md-datepicker-input.md-input{
+				max-width:700px;
+			}
+		}
+
+	}
+}

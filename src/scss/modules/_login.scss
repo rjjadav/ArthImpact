@@ -1,0 +1,123 @@
+#login{
+	.line-wrapper{
+		position: relative;
+		height: 70px;
+		.line{
+			position: absolute;
+			left: 49%;
+			top: 0;
+			bottom: 0;
+			width: 2px;
+			background: #ccc;
+			z-index: 1
+		}
+	}
+
+	h2{
+		text-align: center;
+	}
+	.login-header{
+		width:100%;
+		font-size:3em;
+		padding-left:3%;
+	}
+	.login-content{
+		margin:0 auto;
+		display: table;
+		width:100%;
+		.heading-nm{
+			font-size: 2em;
+		}
+		.buttn{
+			width:100%;
+			.md-raised{
+				width: 49%;
+				float: left;
+				height: 55px;
+				margin-right: 2px;
+				margin-left: 2px;
+			}
+			.md-raised.regis{
+				width:100%;
+			}
+		}
+		.left-section{
+			display: table-cell;
+			float:left;
+			width:50%;
+			padding-top:3%;
+			md-content{
+				width:100%;
+				.name-bl{
+					width:50%;
+				}
+			}
+		}
+		.right-section{
+			display: table-cell;
+			width:50%;
+			float:left;
+			background: #f1f4f6;
+			.registration-content{
+				md-content{
+					width:70%;
+					display:table;
+					margin:0 auto;
+					background: #f1f4f6;
+					._md-datepicker-floating-label._md-datepicker-has-calendar-icon > label:not(.md-no-float):not(.md-container-ignore){
+						right:inherit;
+					}
+					md-input-container{
+						width:100%;
+						margin:15px 0 0 0;
+						._md-datepicker-floating-label._md-datepicker-has-calendar-icon .md-input-message-animation{
+							margin:0;
+						}
+						md-datepicker{
+							width:100%;
+							.md-datepicker-button{
+								display:none;
+							}
+							.md-datepicker-input-container{
+								width:100%;
+								padding:0;
+								margin:0;
+								.md-datepicker-input.md-input{
+									max-width:700px;
+								}
+							}
+
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	._md-datepicker-floating-label._md-datepicker-has-calendar-icon > label:not(.md-no-float):not(.md-container-ignore){
+		right:inherit;
+	}
+	md-input-container{
+		width:100%;
+		margin:15px 0 0 0;
+		._md-datepicker-floating-label._md-datepicker-has-calendar-icon .md-input-message-animation{
+			margin:0;
+		}
+		md-datepicker{
+			width:100%;
+			.md-datepicker-button{
+				display:none;
+			}
+			.md-datepicker-input-container{
+				width:100%;
+				padding:0;
+				margin:0;
+				.md-datepicker-input.md-input{
+					max-width:700px;
+				}
+			}
+
+		}
+	}
+}

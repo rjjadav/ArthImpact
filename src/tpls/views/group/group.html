@@ -1,0 +1,44 @@
+<md-content id="groupDetail" layout="column" layout-padding>
+	<div>
+		<md-button class="md-primary" ui-sref="app.dashboard">Back To Dashboard</md-button>
+	</div>
+
+	<div>
+		<span>Center Address : <strong>{{group.centerAddress}}</strong></span>
+	</div>
+
+	<div>
+		<span>Loan Amount : <strong>{{group.loanAmount}}</strong></span>
+	</div>
+
+	<div>
+		<md-button class="md-primary md-raised ph-60" ng-click="group.offerLoan()">Offer Loan</md-button>
+	</div>
+
+	<div layout="row" layout-wrap layout-margin>
+	<div flex="25" layout="column" ng-repeat="br in group.borrowers">
+		<md-card style="background : url({{br.image}}) no-repeat left center;background-size: 100% 100%;" >
+			<md-card-title >
+				<md-card-title-text>
+					<span>Name : <strong>{{br.name}}</strong></span>
+				</md-card-title-text>
+			</md-card-title>
+			<md-card-content>
+				<p>Total Loan Amount : <strong>{{br.loanAmount}}</strong></p>
+				<p>Address : <strong>{{br.address}}</strong></p>
+			</md-card-content>
+			<!-- <md-card-actions layout="row" layout-align="end center" >
+				<md-button class="md-primary md-raised" ui-sref="app.group({groupId: group.groupId,branch: group.branchName, loanAmount: group.totalAmount})">View Details</md-button>
+				<md-button class="md-primary md-raised ml-10">Offer Loan</md-button>
+			</md-card-actions> -->
+		</md-card>
+		<md-progress-linear 
+		class="p-20" 
+		ng-class="{'progress-green' : br.risk.riskValue>=75, 'progress-blue' : br.risk.riskValue>=50 && br.risk.riskValue<75, 'progress-orange': br.risk.riskValue>=25 && br.risk.riskValue<50, 'progress-red' : br.groupRiskValue<25}" 
+		md-mode="determinate" 
+		value="{{br.risk.riskValue}}">
+		</md-progress-linear>
+	</div>
+		
+	</div>
+</md-content>

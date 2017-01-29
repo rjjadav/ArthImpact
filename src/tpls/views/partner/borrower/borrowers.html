@@ -1,0 +1,90 @@
+<md-content id="borrowersList" layout="column" layout-padding>
+	<!-- <h3>Search Borrowers</h3> -->
+	<form name="borrowerForm" layout="row" layout-sm="column" layout-xs="column">
+		<md-input-container flex>
+			<label>Name</label>
+			<input type="text" name="bname" ng-model="borrower.search.name"/>
+		</md-input-container>
+
+		<md-input-container flex>
+			<label>Date Of Birth</label>
+			<input type="text" name="dateOfBirth" ng-model="borrower.search.dateOfBirth"/>
+		</md-input-container>
+		<div flex>
+			<md-button class="md-primary md-raised" ng-click="borrower.searchBorrowers(borrower.search)">Search</md-button>	
+		</div>
+		
+	</form>
+
+	<div layout="row">
+		<md-input-container flex="50">
+			<label>Enter Group Code</label>
+			<input type="text" name="dateOfBirth" ng-model="borrower.groupCode"/>
+		</md-input-container>
+		<div>
+			<md-button class="md-accent md-raised" ng-click="borrower.getBorrowerByGroupCode(borrower.groupCode)">Search Borrowers</md-button>
+		</div>
+	</div>
+
+	<div layout="column" flex layout-margin ng-if="borrower.borrowersList || borrower.borrowersList.length > 0">
+	<md-list flex>
+		<md-list-item>
+			<div layout="row" layout-xs="column" layout-sm="column" flex>
+				<span flex="10">
+					<strong>Member ID</strong>
+				</span>
+				<span flex="20">
+					<strong>Borrower Name</strong>
+				</span>
+				<span flex="10">
+					<strong>Date Of Birth</strong>
+				</span>
+				<span flex="10">
+					<strong>Loan Cycle</strong>
+				</span>
+				<span flex="15">
+					<strong>Loan Type</strong>
+				</span>
+				<span flex="10">
+					<strong>Loan Amount</strong>
+				</span>
+				<span flex="10">
+					<strong>Status</strong>
+				</span>
+				<span flex="15">
+				</span>
+			</div>
+		</md-list-item>
+		<md-divider></md-divider>
+		<md-list-item ng-repeat="br in borrower.borrowersList">
+			<span flex="10">
+				{{br.memberId}}
+			</span>
+			<span flex="20">
+				{{br.name}}
+			</span>
+			<span flex="10">
+				{{br.dateOfBirth}}
+			</span>
+			<span flex="10">
+				{{br.loanCycle}}
+			</span>
+			<span flex="15">
+				{{br.loanType}}
+			</span>
+
+			<span flex="10">
+				{{br.loanAmount}}
+			</span>
+			<span flex="10">
+				{{br.status}}
+			</span>
+
+			<span flex="15">
+				<md-button class="md-primary" ui-sref="app.partner.borrower-details({arthBorrowerId : br.arthBorrowerId, loanCycle : br.loanCycle,memberId : br.memberId, borrower: br})">edit</md-button>
+			</span>
+			<md-divider></md-divider>
+		</md-list-item>
+	</md-list>
+	</div>
+</md-content>

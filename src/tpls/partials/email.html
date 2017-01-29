@@ -1,0 +1,14 @@
+<md-dialog id="email-dialog" flex="40" layout="row" layout-align="center center" class="ph-40 pv-50">
+	<div layout="column" layout-align="center center" flex>
+		<h3>Please enter your email address to know more about our offerrings</h3>
+		<form name="emailForm" layout="column" layout-fill layout-margin class="ph-25">
+			<md-input-container flex>
+				<label>Email</label>
+				<input type="text" name="email" ng-model="km.email"/>
+			</md-input-container>
+			<md-button class="md-primary md-raised" ng-click="km.goToProducts(km.email)">
+				Submit
+			</md-button>
+		</form>
+	</div>
+</md-dialog>

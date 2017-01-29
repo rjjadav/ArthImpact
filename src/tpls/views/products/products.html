@@ -1,0 +1,70 @@
+<div id="products" layout="column">
+	<!-- <div class="quote-section" layout="row">
+		<div layout="row" layout-align="center center" layout-fill layout-padding>
+			<div flex="35" flex-sm="100" flex-xs="100" layout="column" layout-align="center center" layout-fill layout-align="center center">
+				<h1>Products</h1>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="offerings-section">
+		<div layout="column" layout-align="center center">
+			<h3>Our Products</h3>
+			<div layout="row" layout-align="center center" layout-padding layout-margin layout-fill>
+				<div flex="70" flex-sm="100" flex-xs="100" layout="column">
+					<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center" layout-margin layout-padding ng-click="products.openProductDialog($event,'arth_jivika')" ng-mouseenter="hovering=true" ng-mouseleave="hovering=false" ng-class="{'md-whiteframe-3dp':hovering}">
+						<div flex class="product" flex-order-sm="2" flex-order-xs="2">
+							<h3 class="product-title">
+								Arth Jivika
+							</h3>
+							<!-- <div class="product-description">
+								Shared liability plan for group's social & economic upliftment
+							</div>
+							<md-button class="md-primary" ui-sref="app.product.arth_jivika">
+								Read More
+							</md-button> -->
+						</div>
+						<div flex layout="row" layout-align="center center" flex-order-sm="1" flex-order-xs="1">
+							<img src="assets/images/arth-jiva-icon.jpg">
+						</div>
+					</div>
+
+					<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center" layout-margin layout-padding ng-click="products.openProductDialog($event,'arth_sanchay')" ng-mouseenter="hovering1=true" ng-mouseleave="hovering1=false" ng-class="{'md-whiteframe-3dp':hovering1}">
+						<div flex class="product" flex-order-sm="2" flex-order-xs="2">
+							<h3 class="product-title">
+								Arth Sanchay
+							</h3>
+							<!-- <div class="product-description">
+								A unique Credit-Cum-Wealth Creation Plan that helps micro customers balance their cash flows & inculate financial discpline. It has dual advantage of getting credit for meeting daily expenses and at the same time accumulate fund for future.
+							</div>
+							<md-button class="md-primary" ui-sref="app.product.arth_sanchay">
+								Read More
+							</md-button> -->
+						</div>
+						<div flex layout="row"  layout-align="center center" flex-order-sm="1" flex-order-xs="1">
+							<img src="assets/images/arth-sanchay-icon.jpg">
+						</div>
+					</div>
+
+					<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center" layout-margin layout-padding>
+						<div flex class="product" flex-order-sm="2" flex-order-xs="2">
+							<h3 class="product-title">
+								Arth Cloud
+							</h3>
+							<div class="product-description">
+								Digital lending for impact investors
+							</div>
+							<md-button class="md-primary" ng-click="products.gotoDashboard()">
+								Start Investing
+							</md-button>
+						</div>
+						<div flex layout="row" layout-align="center center" flex-order-sm="1" flex-order-xs="1">
+							<img src="assets/images/marketplace-icon.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ng-include src="'tpls/partials/footer.html'"></ng-include>
+</div>

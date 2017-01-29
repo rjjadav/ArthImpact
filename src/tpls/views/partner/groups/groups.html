@@ -1,0 +1,73 @@
+<md-content id="groups" layout="column">
+	<!-- <h3>Groups</h3>	 -->
+	<div layout="column" flex layout-margin>
+	<div layout="row">
+		<md-input-container flex="50">
+			<label>Enter Groupcode</label>
+			<input type="text" name="" ng-model="groups.groupCode">
+		</md-input-container>	
+		<div>
+			<md-button class="md-primary md-raised" ng-click="groups.searchByGroupCode(groups.groupCode)">Search</md-button>
+		</div>
+		
+	</div>
+	
+
+	<md-list flex>
+		<md-list-item>
+			<div layout="row" layout-xs="column" layout-sm="column" flex>
+				<span flex="10">
+					<Strong>Group Code</Strong>
+				</span>
+				<span flex="20">
+					<strong>Group Name</strong>
+				</span>
+				<span flex="20">
+					<strong>Branch Name</strong>
+				</span>
+				<span flex="10">
+					<strong>Registration Date</strong>
+				</span>
+				<span flex="10">
+					<strong>Loan Amount</strong>
+				</span>
+				<span flex="15">
+					<strong>Status</strong>
+				</span>
+				<span flex></span>
+				<span flex="15">
+				</span>
+			</div>
+		</md-list-item>
+		<md-divider></md-divider>
+		<md-list-item ng-repeat="group in groups.groupsList">
+			<span flex="10">
+					{{group.groupCode}}
+				</span>
+				<span flex="20">
+					{{group.groupName}}
+				</span>
+				<span flex="20">
+					{{group.branchName}}
+				</span>
+				<span flex="10">
+					{{group.registrationDate}}
+				</span>
+				<span flex="10">
+					{{group.totalAmount}}
+				</span>
+				<span flex="15">
+					{{(group.status != null ? 'Active' : 'Inactive')}}
+				</span>
+				<span flex></span>
+				<span flex="15">
+					<md-button class="md-primary" ui-sref="app.partner.groups-details({groupCode: group.groupCode})">Edit</md-button>
+				</span>
+				<md-divider></md-divider>
+		</md-list-item>
+
+	</md-list>
+	<md-button class="md-raised md-accent" ng-click="groups.getAllGroups()" ng-hide="groups.groupsList.length < 10">Load More</md-button>
+</md-content>
+
+

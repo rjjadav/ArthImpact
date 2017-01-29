@@ -1,0 +1,205 @@
+<md-content id="login">
+	<div layout="row" layout-sm="column" layout-xs="column" layout-padding layout-margin layout-fill>
+		<div flex="50">
+			<div layout="column">
+				<h3>Login/Register</h3>
+				<div layout="row" layout-sm="column" layout-xs="column">
+					<md-button class="md-primary md-raised btn-fb" flex ng-click="login.loginWithFacebook()">
+						Login with Facebook
+					</md-button>
+					<md-button class="md-primary md-raised btn-google-plus" flex ng-click="login.loginWithGooglePlus()">
+						Login with Google
+					</md-button>
+				</div>
+
+				<form name="loginForm" layout="column">
+					<div class="name-bl" ng-if="!login.isSocial">
+							<md-input-container class="md-block" >
+								<label>Email</label>
+								<input name="email" ng-model="login.loginUser.username" required ng-pattern="/^.+@.+\..+$/" ng-blur="login.checkAccount(login.loginUser.username)"/>
+								<div ng-if='loginForm.email.$dirty || loginForm.email.$touched' ng-messages='loginForm.email.$error'  md-auto-hide="false">
+									<div ng-message='required'> Please fill out this field</div>
+									<div ng-message='pattern'> Please enter valid Email Address</div>
+								</div>
+							</md-input-container>
+					</div>
+					<div class="name-bl" ng-if="!login.isSocial">
+						<md-input-container class="md-block" >
+							<label>Password</label>
+							<input type="password" ng-model="login.loginUser.password" name="password" required />
+							<div ng-if='loginForm.password.$dirty || loginForm.password.$touched' ng-messages='loginForm.password.$error'>
+								<div ng-message='required'> Please fill out this field</div>
+							</div>
+						</md-input-container>
+					</div>
+					<div ng-if="login.accountExists == false">
+						Seems like you are first timer, please upload your PAN Card
+					</div>
+
+					<md-button class="md-primary md-raised" ngf-select="login.uploadPan($file)" ng-model="$file" ngf-multiple="false" ng-if="login.accountExists == false">
+						Upload Pan
+					</md-button>
+
+					<div>
+						<img src="{{login.uploadedPan}}" style="width:200px;" ng-if="login.uploadedPan && login.accountExists == false ">
+					</div>
+
+					<div style="color: rgb(221,44,0);">
+						{{login.error}}
+					</div>
+					<div ng-if="login.accountExists == true">
+						Welcome back {{login.accountName}}. We appreciate your contribution toward betterment of society.
+					</div>
+					<md-button class="md-raised md-accent" data-ng-click="login.login(login.loginUser)" ng-disabled="!loginForm.$valid || login.loadingLogin"
+					ng-if="login.accountExists == undefined || login.accountExists == true">
+						Log In Securely
+						<div class="small-spinner">
+							<md-progress-circular md-mode='indeterminate' class="md-accent" md-diameter="20" ng-if="login.loadingLogin">
+							</md-progress-circular>	
+						</div>
+					</md-button>
+
+					<md-button class="md-raised md-accent" data-ng-click="login.register(login.loginUser)" ng-disabled="!loginForm.$valid || login.loadingLogin" ng-if="login.accountExists == false">
+						Register
+						<div class="small-spinner">
+							<md-progress-circular md-mode='indeterminate' class="md-accent" md-diameter="20" ng-if="login.loadingLogin">
+							</md-progress-circular>	
+						</div>
+					</md-button>
+					<div layout="row" layout-align="center center">
+						<p class="font-size-18">Thank for being part of Friends of Society</p>	
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div flex layout="row" layout-align="center center">
+			<div flex="60" flex-sm="100" flex-xs="100" layout="column" layout-align="center center">
+			<h2 >
+				Choose borrower or impact
+				partner you want to lend to
+			</h2>
+			<div class="line-wrapper">
+				<div class="line"></div>
+			</div>
+			<h2>
+				Enter the amount you would
+				like to lend
+			</h2>
+			<div class="line-wrapper">
+				<div class="line"></div>
+			</div>
+			<h2>
+				Sign a contract with the
+				borrower upon which you will
+				receive an mpin
+			</h2>
+			<div class="line-wrapper">
+				<div class="line"></div>
+			</div>
+			<h2>
+				Login to your netbanking
+				account and enter the mpin of
+				the group to transfer the money
+			</h2>	
+			</div>
+		</div>
+		<!-- <div flex>
+			<div layout="column">
+				<h3>Register</h3>
+				<form name="userForm" novalidate layout="column">
+					<div class="name-bl">
+						<md-input-container class="md-block" >
+							<input name="name" ng-model="login.user.name" placeholder="Enter name" required minlength="0" maxlength="40" only-alphabets-with-space/>
+							<div ng-messages="userForm.name.$error">
+								<div ng-message="required">Name is required!</div>
+							</div>
+						</md-input-container>
+					</div>
+					<div class="name-bl">
+						<md-input-container class="md-block" >
+							<input name="email" ng-model="login.user.email" placeholder="Enter email" required minlength="10" maxlength="40" ng-pattern="/^.+@.+\..+$/" />
+							<div ng-messages="userForm.email.$error">
+								<div ng-message="required">Email address is required!</div>
+								<div ng-message="pattern">Enter proper email address</div>
+							</div>
+						</md-input-container>
+					</div>
+					<div class="name-bl">
+						<md-input-container>
+							<label>Enter date of birth</label>
+							<md-datepicker ng-model="login.user.dob" name="dateField" md-min-date="login.minDate" md-max-date="login.maxDate" md-open-on-focus></md-datepicker>
+							<div ng-messages="userForm.dateField.$error">
+								<div ng-message="valid">The entered value is not a date!</div>
+								<div ng-message="required">This date is required!</div>
+								<div ng-message="mindate">Date is too early!</div>
+								<div ng-message="maxdate">Date is too late!</div>
+							</div>
+						</md-input-container>
+					</div>
+					<div class="name-bl">
+						<md-input-container class="md-block" >
+							<input type="tel" only-digits name="mobile" ng-model="login.user.mobileNo" placeholder="Enter mobile no." required minlength="10" maxlength="10" ng-pattern="/^[789]\d{9}$/" />
+								<div ng-messages="userForm.email.$error">
+									<div ng-message="required">Enter mobile number!</div>
+									<div ng-message="pattern">Enter proper mobile number</div>
+								</div>
+						</md-input-container>
+					</div>
+					<div class="name-bl">
+						<md-input-container class="md-block" >
+							<input type="tel" only-digits name="account" ng-model="login.user.accountNo" placeholder="Enter bank account no." required minlength="6" maxlength="16"  />
+							<div ng-messages="userForm.account.$error">
+								<div ng-message="required">Enter account number!</div>
+								<div ng-message="minlength">Enter proper account number</div>
+							</div>
+						</md-input-container>
+					</div>
+					<div class="name-bl">
+						<md-input-container class="md-block" >
+							<input name="ifsc" ng-model="login.user.ifscCode" placeholder="Enter IFSC no." required />
+							<div ng-messages="userForm.ifsc.$error">
+								<div ng-message="required">Enter Ifsc code!</div>
+							</div>
+						</md-input-container>
+					</div>
+					<div class="name-bl">
+						<md-input-container class="md-block" >
+							<input type="password" ng-model="login.user.password" required placeholder="Enter password"/>
+							<div ng-messages="userForm.password.$error">
+								<div ng-message="required">This field is required</div>
+							</div>
+						</md-input-container>
+					</div>
+					<div class="name-bl">
+						<md-input-container class="md-block" >
+							<input type="password" ng-model="login.user.confirmPassword" name="confpassword" required placeholder="Confirm password" ng-blur="login.checkIfPasswordMatches()"/>
+							<div ng-messages="userForm.confpassword.$error||errorObject.confirmPassError">
+								<div ng-message="required">This field is required</div>
+								<div ng-show="errorObject.confirmPassError" class="some-message">Confirm password does not matches password</div>
+							</div>
+						</md-input-container>
+					</div>
+
+					<md-button class="md-primary md-raised" ngf-select="login.uploadPan($file,'pan')" ng-model="$file" ngf-multiple="false">
+						Upload Pan
+					</md-button>
+					
+					<md-button class="md-primary md-raised" ngf-select="login.uploadPan($chequeFile,'cheque')" ng-model="$chequeFile" ngf-multiple="false">
+						Upload Crossed Check
+					</md-button>
+					
+					<md-button class="md-raised md-accent" data-ng-click="login.register(userForm.$valid)" ng-disabled="!userForm.$valid">
+						Register
+					</md-button>	
+				</form>
+			</div>
+		</div> -->
+	</div>
+<script type="text/javascript">
+	$(window).scroll(function(){
+		$('.toolbar-header').removeClass('no-bg');
+		$('.white').addClass('hidden');
+	});
+</script>
+</md-content>

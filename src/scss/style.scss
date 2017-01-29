@@ -1,0 +1,18 @@
+/*@import 'node_modules/angular-toastr/src/toastr.less';*/
+@import 'bourbon';
+@import 'neat';
+@import 'fonts';
+@import 'shared';
+@import 'base';
+@import 'button';
+@import 'helper';
+@import 'progressbar';
+
+@import 'modules/**/*';
+@import 'node_modules/angular-material/angular-material.scss';
+@import 'node_modules/angularjs-slider/dist/rzslider.scss';
+@import 'node_modules/angular-material-icons/angular-material-icons';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+$fa-font-path:"../assets/fonts/fa-fonts";
+@import 'node_modules/font-awesome/scss/font-awesome';
+@import 'node_modules/angular-toastr/dist/angular-toastr';

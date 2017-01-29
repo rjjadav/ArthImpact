@@ -1,0 +1,105 @@
+<div class="dashboard">
+	<div class="dashboard-content">
+		<div layout="column">
+			<h3>Partners</h3>
+			<div layout="row" flex layout-margin>
+				<!-- <div flex="25" ng-repeat="partner in partners"> -->
+					<md-card flex="25" ng-repeat="partner in partners" class="md-whiteframe-2dp">
+						<md-card-title >
+							<md-card-title-text>
+								<span class="md-headline">
+									<strong>{{partner.companyName}}</strong>
+								</span>
+							</md-card-title-text>
+						</md-card-title>
+						<md-card-content>
+							<p>{{partner.description}}</p>
+						</md-card-content>
+						<md-card-actions layout="row" layout-align="end center">
+							<md-button class="md-primary md-raised" ng-click="investToAu($event,partner)">Invest Directly</md-button>
+						</md-card-actions>
+					</md-card>
+				<!-- </div> -->
+			</div>
+			<div layout="row" layout-align="center center" ng-if="partners % 4 == 0">
+				<md-button class="md-accent md-raised">Load More</md-button>
+			</div>
+		</div>
+
+		<div layout="column">
+			<h3>Groups</h3>
+			<div layout="row" flex layout-wrap>
+				<div flex="25" ng-repeat="group in groupList" layout="column">
+					<md-card style="background : url({{group.image}}) no-repeat left center;background-size: 100% 100%;"  class="md-whiteframe-2dp">
+						<md-card-title >
+							<md-card-title-text>
+								<span>Center Address:<strong>{{group.centerName}}</strong></span>
+							</md-card-title-text>
+						</md-card-title>
+						<md-card-content>
+							<p>Total Loan Amount : {{group.totalAmount}}</p>
+							<ul class="star-rating" ng-class="{readonly: readonly}">
+								<li class="star" ng-class="{filled: group.groupRiskValue>10}">
+									<i class="fa fa-star"></i>
+								</li>
+								<li class="star" ng-class="{filled: group.groupRiskValue>20}">
+									<i class="fa fa-star"></i>
+								</li>
+								<li class="star" ng-class="{filled: group.groupRiskValue>40}">
+									<i class="fa fa-star"></i>
+								</li>
+
+								<li class="star" ng-class="{filled:group.groupRiskValue>60}">
+									<i class="fa fa-star"></i>
+								</li>
+								<li class="star" ng-class="{filled: group.groupRiskValue>80}">
+									<i class="fa fa-star"></i>
+								</li>
+							</ul>
+						</md-card-content>
+						<md-card-actions layout="row" layout-align="end center" >
+							<md-button class="md-primary md-raised" ui-sref="app.group({groupId: group.groupId,branch: group.centerName, loanAmount: group.totalAmount})">
+								View Details
+							</md-button>
+							<md-button class="md-primary md-raised ml-10" ng-click="lendToBorrower(group,true)">
+								Offer Loan
+							</md-button>
+						</md-card-actions>
+					</md-card>
+					<md-progress-linear 
+					class="p-20" 
+					ng-class="{'progress-green' : group.groupRiskValue>=75, 'progress-blue' : group.groupRiskValue>=50 && group.groupRiskValue<75, 'progress-orange': group.groupRiskValue>=25 && group.groupRiskValue<50, 'progress-red' : group.groupRiskValue<25}" 
+					md-mode="determinate" 
+					value="{{group.groupRiskValue}}">
+					</md-progress-linear>
+				</div>
+			</div>
+			<div layout="row" layout-align="center center">
+				<md-button class="md-accent md-raised" ng-click="getGroups()" ng-if="loadMoreGroup">
+					Load More
+				</md-button>
+			</div>
+		</div>
+
+		<div layout="column" ng-if="borrowers.length > 0">
+			<h3>Individual</h3>
+			<div layout="row" flex layout-margin>
+				<div flex="25" ng-repeat="borrower in borrowers">
+					<md-card>
+						<md-card-title >
+							<md-card-title-text>
+								<span class="md-headline">{{borrower.name}}</span>
+							</md-card-title-text>
+						</md-card-title>
+						<md-card-content>
+							<p>{{borrower.loanAmount}}</p>
+						</md-card-content>
+						<!-- <md-card-actions layout="row" layout-align="end center">
+							<md-button class="md-primary">Invest Directly</md-button>
+						</md-card-actions> -->
+					</md-card>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+// variables
+
+$color-1: #eee;
+$color-2: #aaa;
+$color-3: #666;
+$color-4: #009;
+$color-5: #006;
+
+//Brown shades
+$color-6: #d55852;  //light Brown
+$color-7: #562113;  //Dark Brown
+
+//Footer Color
+$color-8: #e7e5cc;
+
+//Social Media Colors
+$google-plus: #dd4b39;
+$fb: #3b5998;
+$linkedin: #4875B4;
+$twitter: #33CCFF;
+
+// mixins
+@mixin retina-inline-asset($name, $ext: 'png') {
+    $image: 'assets/images/' + $name + '.' + $ext;
+    $image-retina: 'assets/images/' + $name + '_2x.' + $ext;
+
+    display: block;
+    width: width($image);
+    height: height($image);
+    background-repeat: no-repeat;
+    background-size: size($image);
+
+    @if $assets-retina {
+        background-image: inline($image-retina);
+    } @else {
+        background-image: inline($image);
+    }
+}

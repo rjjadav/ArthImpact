@@ -1,0 +1,136 @@
+<md-content layout="row" layout-margin layout-align="center center">
+<div flex="60" flex-sm="100" flex-xs="100">
+	<!-- <h3>Borrower Details</h3> -->
+	<div layout="column" class="mt-30">
+		<md-switch ng-model="br.status" aria-label="Switch 1">
+			Enable
+		</md-switch>
+	</div>
+	<div ng-if="br.status">
+	<div layout="column">
+		<md-input-container flex>
+			<label>Mobile</label>
+			<input type="text" name="" ng-model="br.borrowerDetails.mobile"/>
+		</md-input-container>
+	</div>
+	<div layout="column" >
+		<label>Upload Image</label>
+		<div flex>
+			<md-button class="md-primary md-raised ph-40" ngf-select="br.uploadImage(br.image)" ng-model="br.image">Upload</md-button>
+		</div>
+
+
+		<div layout="column" ng-if="br.borrowerDetails.image ">
+			<h5>Uploaded Image</h5>
+			<div>{{br.image.name}}</div>
+			<div>
+				<img src="{{br.borrowerDetails.image}}" style="height: 200px;">
+			</div>
+		</div>
+	</div>
+
+	<div layout="column" class="mt-30" >
+		<h4>Kyc Details</h4>
+		<md-checkbox ng-model="br.borrowerDetails.addressProof" flex class="mt-20">
+			Address Proof
+		</md-checkbox>
+		<md-select ng-model="br.borrowerDetails.addressProofType" placeholder="Select Address Proof" ng-if="br.borrowerDetails.addressProof">
+			<md-option value="PAN Card">PAN Card</md-option>
+			<md-option value="Aadhar Card">Aadhar Card</md-option>
+			<md-option value="Voter ID">Voter ID</md-option>
+		</md-select>	
+
+		<md-checkbox ng-model="br.borrowerDetails.idProof" flex class="mt-20">
+			ID Proof
+		</md-checkbox>
+		<md-select ng-model="br.borrowerDetails.idProofType" placeholder="Select Address Proof" ng-if="br.borrowerDetails.idProof">
+			<md-option value="PAN Card">PAN Card</md-option>
+			<md-option value="Aadhar Card">Aadhar Card</md-option>
+			<md-option value="Voter ID">Voter ID</md-option>
+		</md-select>	
+	</div>
+
+	<div layout="column" class="mt-30" >
+		<h4>Guarantor Details</h4>
+		<md-checkbox ng-model="br.borrowerDetails.isGaurantorAvl" flex class="mt-20">
+			Guarantor Available
+		</md-checkbox>
+		<md-input-container ng-if="br.borrowerDetails.isGaurantorAvl">
+			<label>Name</label>
+			<input type="text" ng-model="br.borrowerDetails.guarantorName">
+		</md-input-container>
+		<md-select ng-model="br.borrowerDetails.guarantorRelation" placeholder="Select Relationship" ng-if="br.borrowerDetails.isGaurantorAvl">
+			<md-option value="husband">Husband</md-option>
+			<md-option value="brother/sister">Brother/Sister</md-option>
+			<md-option value="coleague">Coleague</md-option>
+			<md-option value="Son/Daughter">Son/Daughter</md-option>
+		</md-select>
+	</div>
+
+	<div layout="column" class="mt-30">
+		<h4>Purpose</h4>
+		<md-checkbox ng-model="br.borrowerDetails.isPurposeAvl" flex class="mt-20">
+			Purpose Available
+		</md-checkbox>
+		<md-input-container ng-if="br.borrowerDetails.isPurposeAvl">
+			<label>Business Type </label>
+			<md-select ng-model="br.borrowerDetails.businessType" ng-change="br.getPurposeList(br.borrowerDetails.businessType)">
+				<md-option value="Agriculture">Agriculture</md-option>
+				<md-option value="Cottege Industries & Small Enterpenour">Cottege Industries & Small Enterpenour</md-option>
+				<md-option value="Dairy & Animal Husbandry">Dairy & Animal Husbandry</md-option>
+				<md-option value="Small Business">Small Business
+				</md-option>
+			</md-select>
+		</md-input-container>
+
+		<md-input-container ng-if="br.borrowerDetails.isPurposeAvl" >
+			<label>Purpose</label>
+			<md-select ng-model="br.borrowerDetails.purpose" ng-disabled="br.borrowerDetails.businessType == undefined || br.purposeLoading">
+				<md-option ng-repeat="purpose in br.purposeList" value="{{purpose}}" >{{purpose}}</md-option>
+			</md-select>
+			<div class="small-spinner" ng-if="br.purposeLoading">
+				<md-progress-circular md-mode='indeterminate' class="md-accent" md-diameter="20">
+				</md-progress-circular>	
+			</div>
+		</md-input-container>
+	</div>
+
+	<div layout="column" class="mt-30" >
+		<h4>Bureau Details</h4>
+		<md-checkbox ng-model="br.borrowerDetails.isBureauRecordAvl" flex class="mt-20">
+			Bureau Details Available
+		</md-checkbox>
+		<md-select ng-model="br.borrowerDetails.bureauScore" placeholder="Select Category" ng-if="br.borrowerDetails.isBureauRecordAvl">
+			<md-option value="0">Poor</md-option>
+			<md-option value="10">Average</md-option>
+			<md-option value="20">Good</md-option>
+			<md-option value="30">Very Good</md-option>
+		</md-select>
+	</div>
+
+	<div layout="column" class="mt-30" >
+		<h4>Transaction History</h4>
+		<md-checkbox ng-model="br.borrowerDetails.istransactionHistroyAvl" flex class="mt-20">
+			Transaction History Available
+		</md-checkbox>
+		<md-select ng-model="br.borrowerDetails.txnHistoryScore" placeholder="Select Category" ng-if="br.borrowerDetails.istransactionHistroyAvl">
+			<md-option value="0">Poor</md-option>
+			<md-option value="10">Average</md-option>
+			<md-option value="20">Good</md-option>
+			<md-option value="30">Very Good</md-option>
+		</md-select>
+	</div>	
+	</div>
+		
+
+	<md-button class="md-primary md-raised ph-60" ng-click="br.saveDetails(br.borrowerDetails)" ng-if="br.status" ng-disabled="br.loading">
+		Save Details
+		<div class="small-spinner" ng-if="br.loading">
+			<md-progress-circular md-mode='indeterminate' class="md-accent" md-diameter="20">
+			</md-progress-circular>	
+		</div>
+	</md-button>
+
+</div>
+</md-content>
+

@@ -1,0 +1,68 @@
+<md-content layout="column">
+	<!-- <div layout="row" layout-margin>
+		<h1>Arth</h1>
+		<span flex></span>
+		<md-button class="mdbutton" ui-sref="app.lender.dashboard">Lender Dashboard</md-button>
+		<md-button class="mdbutton">Profile</md-button>
+	</div> -->
+
+	<md-card layout="row" layout-align="center center" flex>
+		<md-card-content layout="row" layout-align="center center" flex>
+			 <nvd3 options="auActive.options" data="auActive.data"></nvd3>
+		</md-card-content>
+	</md-card>
+
+	<div layout="column" layout-margin>
+		<md-list flex>
+			<md-list-item>
+				<div layout="row" layout-xs="column" layout-sm="column" flex layout-align="center center">
+					<span flex="15">
+						<strong>Lender Id</strong>
+					</span>
+					<span flex="15">
+						<Strong>Group Name</Strong>
+					</span>
+					<span flex="15">
+						<strong>Loan Active Status</strong>
+					</span>
+					<span flex="15">
+						<strong>Amount</strong>
+					</span>
+					<span flex="15">
+						<strong>payment ID</strong>
+					</span>
+					<span flex="15">
+						<strong>Date</strong>
+					</span>
+					<!-- <span flex="10" class="text-center">
+						<strong>Action</strong>
+					</span> -->
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+			<md-list-item ng-repeat="group in auActive.groupsList" ng-click="null">
+				<div layout="row" layout-xs="column" layout-sm="column" flex layout-align="center center">
+					<span flex="15">
+						{{group.lenderId}}
+					</span>
+					<span flex="15">
+						{{group.groupId}}
+					</span>
+					<span flex="15">
+						{{group.loanActive}}
+					</span>
+					<span flex="15">
+						{{group.amount}}
+					</span>
+					<span flex="15">
+						{{group.instaMojoPaymentId}}
+					</span>
+					<span flex="15">
+						{{group.dateOfTransaction | date: 'dd-MM-yyyy'}}
+					</span>
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+		</md-list>
+	</div>
+</md-content>

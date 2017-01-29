@@ -1,0 +1,28 @@
+<div layout="column" layout-margin>
+  <p>
+    Please Add your bank Details before Proceeding to payment.
+  </p>
+  <form name="bankForm" layout="column">
+    <md-input-container flex>
+      <label>Bank Name</label>
+      <input type="text" name="bankName" ng-model="bank.bankName" required />
+    </md-input-container>
+
+    <md-input-container flex>
+      <label>Bank Account Number</label>
+      <input type="text" name="bankAccountNumber" ng-model="bank.bankAccountNumber" required>
+    </md-input-container>
+
+    <md-input-container flex>
+      <label>IFSC Code</label>
+      <input type="text" name="ifscCode" ng-model="bank.ifscCode" required />
+    </md-input-container>
+
+    <md-input-container flex>
+      <label>Mobile Number</label>
+      <input type="text" name="mobile" ng-model="bank.mobile" required />
+    </md-input-container>
+
+    <md-button class="md-accent md-raised" ng-click="saveBankDetails(bank)">Save Bank Details</md-button>
+  </form>  
+</div>

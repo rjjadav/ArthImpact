@@ -1,0 +1,35 @@
+#footer{
+	background-color: $color-8 !important;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color: $color-7;
+
+	h4{
+		color: $color-6;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.news-letter{
+		position: relative !important;
+		width: 280px;
+		height: 38px;
+		input{
+			width: 280px;
+			height: 38px;
+			border-radius: 50px;
+			border: 2px solid $color-6 !important;	
+			padding-left: 10px;
+			background-color: $color-8;
+		}
+		.md-button{
+			position: absolute !important;
+			top: 0;
+			right: 0;
+			margin: 0;
+		}
+	}
+	.social-media{
+		color: $color-7;
+	}
+}

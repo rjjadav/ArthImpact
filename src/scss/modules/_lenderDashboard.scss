@@ -1,0 +1,16 @@
+#lender-dashboard{
+	color : $color-7 !important;
+	md-card{
+		md-card-title-text{
+			.md-headline{
+				color : $color-7 !important;
+				padding-left: 16px;
+			}
+		}
+
+		md-card-content{
+			color : $color-7 !important;
+			font-weight: 700 !important;
+		}
+	}
+}

@@ -1,0 +1,97 @@
+<md-content id="home" layout="column" style="margin-top: -90px;">
+	<!-- <ng-include src="'tpls/partials/header.html'"></ng-include> -->
+
+	<div class="section-bg">
+		<div layout="row" layout-align="center center" layout-padding class="layer">
+			<div flex="80" flex-sm="100" flex-xs="100" layout="column">
+				<h3 class="banner-header">
+					Empower People To Live Their Dream.
+				</h3>
+				<!-- <div class="banner-description">
+					Our philosophy & work is embodied in our name Arth Impact - Arth when translated in English means "Money" and we aim at making a meaningful and positive impact in the lives of micro customer by providing financial assistance
+				</div> -->
+				<div layout="row" layout-align="center center">
+					<md-divider flex></md-divider>	
+				</div>
+				<p>
+					Arth (अर्थ) is a concept that means both the purpose of life, as well as wealth — the means to realize one’s life objectives.
+				</p>
+				<p class="mt-30">
+					Arth Impact creates unique, respectful and aspirational financial offerings to help the mass consumer pursue his or her dreams.
+				</p>
+
+				<div layout="row" layout-align="center center" class="mt-30">
+					<md-button class="md-primary round-button font-white" ui-sref="app.offerings">
+						Explore our offerings
+					</md-button>	
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="product-purpose pv-50">
+		<div layout="row" layout-align="center center">
+			<div flex="60" flex-sm="100" flex-xs="100" layout="column" layout-align="center center">
+				<h3 class="section-header" layout="row" layout-align="center center">
+					Who do we stand for?
+				</h3>
+
+				<p>
+					We celebrate and support people looking to create a better future for themselves, their families and their communities and envision a world where all people hold the power to create opportunity for themselves and others
+				</p>
+				<p class="mt-30">
+					We stand for and with the micro consumer, who is largely un-serviced, to break the poverty cycle by creating unique, respectful and aspirational offerings for them
+				</p>
+
+				<md-button class="md-primary read-more font-size-28" ui-sref="app.offerings">
+					Explore our offerings
+					<i class="fa fa-caret-right" aria-hidden="true"></i>
+				</md-button>
+			</div>	
+		</div>
+	</div>
+	<!-- <div class="contact-us-section">
+		<div  layout="row" layout-align="center center" layout-fill>
+			<div flex hide-xs hide-sm class="logo-section" layout="row" layout-align="center center">
+				<img src="assets/images/arth-logo-large.png">
+			</div>
+			<div flex class="contact-us-text" layout="column" layout-margin>
+				<h3>Get in Touch With us to start investing</h3>
+				<md-input-container flex class="md-accent">
+					<label>Name</label>
+					<input type="text" name="name" ng-model="home.contactus.name"/>
+				</md-input-container>
+				<md-input-container flex class="md-accent">
+					<label>Email</label>
+					<input type="text" name="email" ng-model="home.contactus.email"/>
+				</md-input-container>
+				<md-input-container flex class="md-accent">
+					<label>Mobile</label>
+					<input type="text" name="mobile" ng-model="home.contactus.mobile"/>
+				</md-input-container>
+				<md-button flex class="md-accent md-raised">Submit</md-button>
+			</div>
+		</div>
+	</div> -->
+
+<!-- <script type="text/javascript">
+	'use strict';
+	$(window).scroll(function(){
+		if ($(window).scrollTop() >= 300) {
+			$('.toolbar-header').removeClass('no-bg');
+			$('.sticky').removeClass('hidden');
+			$('.white').addClass('hidden');
+		}
+		else {
+			$('.toolbar-header').addClass('no-bg');
+			$('.sticky').addClass('hidden');
+			$('.white').removeClass('hidden');
+		}
+	});
+</script> -->
+
+	<ng-include src="'tpls/partials/footer.html'"></ng-include>
+
+</md-content>

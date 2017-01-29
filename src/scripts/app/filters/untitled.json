@@ -1,0 +1,2172 @@
+{ 
+    "_class" : "com.cointribe.details.models.BankTransaction1", 
+    "businessDetails" : {
+        "accountResult" : "{\"Part\":{\"reason\":\"\",\"errorCode\":\"E_NO_ERROR\",\"perfiosTransactionId\":\"\",\"status\":\"success\"},\"parts\":1,\"files\":\"available\",\"processing\":\"Cointribe\",\"txnId\":\"\"}", 
+        "userBankAccounts" : {
+            "123" : [
+                "Transaction"
+            ]
+        }, 
+        "personalInfo" : [
+            {
+                "name" : "SM Enterprises", 
+                "bankName" : "Bank Of Baroda", 
+                "address" : "New Delhi", 
+                "userId" : "", 
+                "instId" : "123"
+            }
+        ], 
+        "finalSubmitDone" : true, 
+        "perfiosId" : "-1", 
+        "transactionId" : "bbe6a1b1-bde7-4027-9f2d-1008855057aa", 
+        "scoringInput" : {
+            "minimum25CreditSideTransaction" : true, 
+            "DEBIT CASH WITHDRAWL GROUP" : "257951.0", 
+            "investmentMatured" : "0.0", 
+            "IS_LOAN_PRESENT_IN_STATEMENT" : false, 
+            "EDC_DATA" : {
+                "count" : 0, 
+                "sum" : 0.0, 
+                "description" : [
+
+                ]
+            }, 
+            "sizeOfBankStatement" : "6", 
+            "crgSlope" : "-0.0", 
+            "multiplierCriteriaForCashTrxn" : true, 
+            "numberOfChequeBounce" : 0, 
+            "CREDIT CASH DEPOSIT GROUP" : "147000.0", 
+            "customerIndex" : {
+                "countOfGreaterThan25PercentCustomer" : "1", 
+                "countOfGreaterThan50PercentCustomer" : "1", 
+                "countOfGreaterThan75PercentCustomer" : "2"
+            }, 
+            "creditCardRelationShipData" : [
+
+            ], 
+            "totalRentLast6Months" : "0", 
+            "insuranceRelationShipData" : [
+
+            ], 
+            "totalEmiLast6Months" : "0", 
+            "customersData" : [
+                {
+                    "parent" : "0", 
+                    "descriptions" : [
+                        {
+                            "_id" : "39", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "BNC CDAR", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "19749.640000000014", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "BNC/CDAR", 
+                            "amount" : 18000.0, 
+                            "date" : "2016-03-03", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "2", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "BNC CDAR", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "33374.64", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "BNC CDAR", 
+                            "amount" : 4000.0, 
+                            "date" : "2016-01-02", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "72", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "BNC CDAR", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "18174.340000000015", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "BNC CDAR", 
+                            "amount" : 14000.0, 
+                            "date" : "2016-05-03", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "21", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "BNC CDAR", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "6936.639999999999", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "BNC/CDAR", 
+                            "amount" : 3500.0, 
+                            "date" : "2016-02-09", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "22", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "BNC CDAR", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "12336.64", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "BNC/CDAR", 
+                            "amount" : 5400.0, 
+                            "date" : "2016-02-09", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ], 
+                    "tag" : "BNC CDAR", 
+                    "isTxnRemoved" : false
+                }, 
+                {
+                    "parent" : "1", 
+                    "descriptions" : [
+                        {
+                            "_id" : "35", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "CDAR", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "6184.440000000001", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "CDAR", 
+                            "amount" : 5000.0, 
+                            "date" : "2016-02-25", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "52", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "CDAR", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "18793.540000000015", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "CDAR", 
+                            "amount" : 17300.0, 
+                            "date" : "2016-04-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "75", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "CDAR", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "11836.340000000015", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "CDAR", 
+                            "amount" : 11500.0, 
+                            "date" : "2016-05-09", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "55", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "CDAR", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "12227.540000000015", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "CDAR", 
+                            "amount" : 11500.0, 
+                            "date" : "2016-04-08", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ], 
+                    "tag" : "CDAR", 
+                    "isTxnRemoved" : false
+                }, 
+                {
+                    "parent" : "2", 
+                    "descriptions" : [
+                        {
+                            "_id" : "5", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "SERDEL NEW", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "26692.64", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERDEL NEW", 
+                            "amount" : 25000.0, 
+                            "date" : "2016-01-07", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "6", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "SERDEL NEW", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "76692.64", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERDEL NEW", 
+                            "amount" : 50000.0, 
+                            "date" : "2016-01-08", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "31", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "SERDEL NEW", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "9494.240000000002", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERDEL-NEW                   ", 
+                            "amount" : 5500.0, 
+                            "date" : "2016-02-24", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "86", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "SERDEL NEW", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "42371.74000000002", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERDEL NEW", 
+                            "amount" : 31500.0, 
+                            "date" : "2016-06-03", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "46", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "SERDEL NEW", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "12327.000000000015", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERDEL NEW", 
+                            "amount" : 12327.0, 
+                            "date" : "2016-03-30", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ], 
+                    "tag" : "SERDEL NEW", 
+                    "isTxnRemoved" : false
+                }, 
+                {
+                    "parent" : "3", 
+                    "descriptions" : [
+                        {
+                            "_id" : "28", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "JIND JIND", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "10517.04", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "JIND-JIND", 
+                            "amount" : 10000.0, 
+                            "date" : "2016-02-24", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "17", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "JIND JIND", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "13118.64", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "JIND-JIND", 
+                            "amount" : 10000.0, 
+                            "date" : "2016-02-02", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ], 
+                    "tag" : "JIND JIND", 
+                    "isTxnRemoved" : false
+                }, 
+                {
+                    "parent" : "4", 
+                    "descriptions" : [
+                        {
+                            "_id" : "66", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "217529.14", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "RTGS", 
+                            "amount" : 216217.0, 
+                            "date" : "2016-04-25", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "88", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "49796.74000000002", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "BY TRANSFER", 
+                            "amount" : 8000.0, 
+                            "date" : "2016-06-03", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "37", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "221749.64", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "RTGS", 
+                            "amount" : 220588.0, 
+                            "date" : "2016-02-29", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "7", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "131692.64", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "BY INST", 
+                            "amount" : 55000.0, 
+                            "date" : "2016-01-08", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "73", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "SWT", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "19174.340000000015", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SWT", 
+                            "amount" : 1000.0, 
+                            "date" : "2016-05-03", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "70", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "TRNS", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "6197.140000000014", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "TRNS", 
+                            "amount" : 5000.0, 
+                            "date" : "2016-04-30", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "80", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "KAITHA KAITHA", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "15261.340000000015", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "KAITHA KAITHA", 
+                            "amount" : 15000.0, 
+                            "date" : "2016-05-25", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "41", 
+                            "typeCategory" : "CREDIT", 
+                            "description" : "SERBOM MUMBAI", 
+                            "category" : "CREDIT REVENUE GROUP", 
+                            "balance" : "12298.640000000014", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERBOM-MUMBAI", 
+                            "amount" : 10500.0, 
+                            "date" : "2016-03-10", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ], 
+                    "tag" : "OTHER CUSTOMERS", 
+                    "isTxnRemoved" : false
+                }
+            ], 
+            "emiBounceCount" : 0, 
+            "countOfGreaterThan50PercentRevenue" : "1", 
+            "taxPaymentSum" : 0.0, 
+            "creditSum" : "912832.0", 
+            "numberOfVendors" : "3", 
+            "CREDIT REVENUE GROUP" : "765832.0", 
+            "numberOfCustomers" : "5", 
+            "CASH_DEPOSIT_FREQUENCY_REQUIRED" : "0.03333333333333333", 
+            "loanAndEmiFlags" : {
+
+            }, 
+            "emiRangeGreaterThan5" : false, 
+            "GROUP_RMSE" : {
+                "DEBIT_RMSE" : {
+                    "DEBIT CASH WITHDRAWL GROUP" : [
+
+                    ], 
+                    "DEBIT INTEREST TO BANK GROUP" : [
+
+                    ], 
+                    "DEBIT BANK CHARGES GROUP" : [
+
+                    ], 
+                    "DEBIT UTILITIES EXPENSES GROUP" : [
+
+                    ], 
+                    "DEBIT RENT PAYMENT GROUP" : [
+
+                    ], 
+                    "DEBIT INVESTMENT MADE GROUP" : [
+
+                    ], 
+                    "DEBIT DONATION GROUP" : [
+
+                    ], 
+                    "DEBIT ADJUSTMENT GROUP" : [
+
+                    ], 
+                    "DEBIT SELF GROUP" : [
+
+                    ], 
+                    "DEBIT ATM WITHDRAWL GROUP" : [
+
+                    ], 
+                    "DEBIT SALARY EXPENSES GROUP" : [
+
+                    ], 
+                    "DEBIT TAX PAYMENT GROUP" : [
+
+                    ], 
+                    "DEBIT VENDOR GROUP" : [
+
+                    ], 
+                    "DEBIT EMI PAYMENT GROUP" : [
+
+                    ], 
+                    "DEBIT LOAN REPAYMENT GROUP" : [
+
+                    ], 
+                    "DEBIT CREDIT CARD PAYMENT GROUP" : [
+
+                    ]
+                }, 
+                "CREDIT_RMSE" : {
+                    "CREDIT SELF GROUP" : [
+
+                    ], 
+                    "CREDIT EMI-RENT GROUP" : [
+
+                    ], 
+                    "CREDIT TAX REFUNDS GROUP" : [
+
+                    ], 
+                    "CREDIT CASH DEPOSIT GROUP" : [
+
+                    ], 
+                    "CREDIT ADJUSTMENT GROUP" : [
+
+                    ], 
+                    "CREDIT LOAN AND ADVANCES GROUP" : [
+
+                    ], 
+                    "CREDIT INTEREST FROM BANK GROUP" : [
+
+                    ], 
+                    "CREDIT REVENUE GROUP" : [
+
+                    ], 
+                    "CREDIT INVESTMENT MATURED GROUP" : [
+
+                    ], 
+                    "CREDIT REVERSAL GROUP" : [
+
+                    ]
+                }
+            }, 
+            "branchCity" : "", 
+            "investmentMadeSum" : "0", 
+            "multiplierCriteriaForCreditTrxn" : true, 
+            "obligation" : [
+                {
+                    "_id" : null, 
+                    "amount" : 18838.0, 
+                    "count" : 2, 
+                    "descriptions" : [
+                        {
+                            "_id" : "74", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "ECS HDB", 
+                            "category" : "DEBIT EMI PAYMENT GROUP", 
+                            "balance" : "336.3400000000147", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "ECS HDB", 
+                            "amount" : 18838.0, 
+                            "date" : "2016-05-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "89", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SERBOM-MUMBAI ECS HDB", 
+                            "category" : "DEBIT EMI PAYMENT GROUP", 
+                            "balance" : "30958.74000000002", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERBOM-MUMBAI ECS HDB", 
+                            "amount" : 18838.0, 
+                            "date" : "2016-06-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ]
+                }, 
+                {
+                    "_id" : null, 
+                    "amount" : 11460.0, 
+                    "count" : 1, 
+                    "descriptions" : [
+                        {
+                            "_id" : "76", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "ECS TP JFS DBT", 
+                            "category" : "DEBIT EMI PAYMENT GROUP", 
+                            "balance" : "376.3400000000147", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "ECS TP JFS DBT", 
+                            "amount" : 11460.0, 
+                            "date" : "2016-05-10", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ]
+                }, 
+                {
+                    "_id" : null, 
+                    "amount" : 10023.0, 
+                    "count" : 1, 
+                    "descriptions" : [
+                        {
+                            "_id" : "91", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "HDFC BANK LTD LOAN AC", 
+                            "category" : "DEBIT EMI PAYMENT GROUP", 
+                            "balance" : "291.7400000000198", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "HDFC BANK LTD LOAN AC", 
+                            "amount" : 10023.0, 
+                            "date" : "2016-06-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ]
+                }
+            ], 
+            "DEBIT ATM WITHDRAWL GROUP" : "74221.00000000003", 
+            "creditSelf" : "0.0", 
+            "accountTypes" : {
+                "Transaction" : "Transaction"
+            }, 
+            "chqBouncesRatio" : "0.0", 
+            "debitSum" : "949936.9000000005", 
+            "MEDIAN_MODE_ANALYSIS" : {
+                "MONTH_DATA" : [
+                    {
+                        "frequency" : "MONTHLY", 
+                        "startDate" : "2016-01-01T18:30:00.000+0000", 
+                        "endDate" : "2016-01-30T18:30:00.000+0000", 
+                        "average" : 17701.453333333346, 
+                        "median" : 3118.64, 
+                        "mode" : [
+                            3118.64
+                        ]
+                    }, 
+                    {
+                        "frequency" : "MONTHLY", 
+                        "startDate" : "2016-01-31T18:30:00.000+0000", 
+                        "endDate" : "2016-02-28T18:30:00.000+0000", 
+                        "average" : 3755.819310344831, 
+                        "median" : 1161.6400000000012, 
+                        "mode" : [
+                            517.0400000000009
+                        ]
+                    }, 
+                    {
+                        "frequency" : "MONTHLY", 
+                        "startDate" : "2016-02-29T18:30:00.000+0000", 
+                        "endDate" : "2016-03-30T18:30:00.000+0000", 
+                        "average" : 5293.546451612912, 
+                        "median" : 501.340000000014, 
+                        "mode" : [
+                            1.404032445861958E-11
+                        ]
+                    }, 
+                    {
+                        "frequency" : "MONTHLY", 
+                        "startDate" : "", 
+                        "endDate" : "", 
+                        "average" : 5034.092666666682, 
+                        "median" : 1197.140000000014, 
+                        "mode" : [
+                            244.74000000001547
+                        ]
+                    }, 
+                    {
+                        "frequency" : "MONTHLY", 
+                        "startDate" : "", 
+                        "endDate" : "", 
+                        "average" : 3699.7012903225927, 
+                        "median" : 376.3400000000147, 
+                        "mode" : [
+                            376.3400000000147
+                        ]
+                    }, 
+                    {
+                        "frequency" : "MONTHLY", 
+                        "startDate" : "", 
+                        "endDate" : "", 
+                        "average" : 17957.99000000002, 
+                        "median" : 10871.740000000016, 
+                        "mode" : [
+                            10871.740000000016
+                        ]
+                    }
+                ], 
+                "QUATER_DATA" : [
+                    {
+                        "frequency" : "QUATERLY", 
+                        "startDate" : "", 
+                        "endDate" : "", 
+                        "average" : 4823.04637362639, 
+                        "median" : 615.840000000014, 
+                        "mode" : [
+                            376.3400000000147
+                        ]
+                    }, 
+                    {
+                        "frequency" : "QUATERLY", 
+                        "startDate" : "", 
+                        "endDate" : "", 
+                        "average" : 10979.852500000015, 
+                        "median" : 3118.64, 
+                        "mode" : [
+                            3118.64
+                        ]
+                    }
+                ], 
+                "YEAR_DATA" : [
+                    {
+                        "frequency" : "YEAR", 
+                        "startDate" : "", 
+                        "endDate" : "", 
+                        "average" : 7365.211483870972, 
+                        "median" : 1749.640000000014, 
+                        "mode" : [
+                            3118.64
+                        ]
+                    }
+                ], 
+                "OVERALL_DATA" : {
+                    "frequency" : "OVERALL", 
+                    "startDate" : "", 
+                    "endDate" : "", 
+                    "average" : 7365.211483870972, 
+                    "median" : 1749.640000000014, 
+                    "mode" : [
+                        3118.64
+                    ]
+                }
+            }, 
+            "paymentGateway" : "0.0", 
+            "vendorIndex" : {
+                "countOfGreaterThan25PercentVendor" : "1", 
+                "countOfGreaterThan50PercentVendor" : "1", 
+                "countOfGreaterThan75PercentVendor" : "2"
+            }, 
+            "emiBounceData" : [
+
+            ], 
+            "cashInfusion" : false, 
+            "sumVendor" : "448859.76", 
+            "avgBankBalanceLast90Days" : 4823.04637362639, 
+            "DEBIT BANK CHARGES GROUP" : "1245.34", 
+            "vendorPercentageContribution" : {
+                "SERBOM MUMBAI" : "20.24", 
+                "OTHER VENDORS" : "73.91", 
+                "SERDEL NEW" : "5.85"
+            }, 
+            "branchPincode" : "", 
+            "AQB_DATA" : [
+                {
+                    "startDate" : "", 
+                    "endDate" : "", 
+                    "AQB" : 4823.04637362639
+                }, 
+                {
+                    "startDate" : "", 
+                    "endDate" : "", 
+                    "AQB" : 10979.852500000015
+                }
+            ], 
+            "branchAddress" : "", 
+            "loanRelationShipData" : [
+
+            ], 
+            "bankName" : "", 
+            "sumCashDeposit" : "294000.0", 
+            "selfToCreditRatio" : "0.0", 
+            "customerPercentageContribution" : {
+                "BNC CDAR" : "5.86", 
+                "JIND JIND" : "2.61", 
+                "OTHER CUSTOMERS" : "69.38", 
+                "SERDEL NEW" : "16.23", 
+                "CDAR" : "5.92"
+            }, 
+            "chequeSum" : "1531664.0", 
+            "selfToDebitRatio" : "0.0", 
+            "pos" : "0", 
+            "DEBIT ADJUSTMENT GROUP" : "3309.8", 
+            "DEBIT EMI PAYMENT GROUP" : "164350.0", 
+            "averageBankBalance" : "0.0", 
+            "countOfGreaterThan50PercentVendor" : "1", 
+            "POS_FREQUENCY" : 0, 
+            "vendorsData" : [
+                {
+                    "parent" : "0", 
+                    "descriptions" : [
+                        {
+                            "_id" : "14", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SERBOM MUMBAI", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "85141.44", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERBOM MUMBAI", 
+                            "amount" : 11460.0, 
+                            "date" : "2016-01-11", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "19", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SERBOM MUMBAI", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "21387.64", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERBOM-MUMBAI", 
+                            "amount" : 13731.0, 
+                            "date" : "2016-02-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "3", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SERBOM MUMBAI", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "15423.64", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERBOM MUMBAI", 
+                            "amount" : 17951.0, 
+                            "date" : "2016-01-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "20", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SERBOM MUMBAI", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "3436.6399999999994", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERBOM-MUMBAI", 
+                            "amount" : 17951.0, 
+                            "date" : "2016-02-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "54", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SERBOM MUMBAI", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "727.5400000000154", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERBOM-MUMBAI", 
+                            "amount" : 17951.0, 
+                            "date" : "2016-04-05", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "56", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SERBOM MUMBAI", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "767.5400000000154", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERBOM-MUMBAI", 
+                            "amount" : 11460.0, 
+                            "date" : "2016-04-11", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ], 
+                    "tag" : "SERBOM MUMBAI", 
+                    "isTxnRemoved" : false
+                }, 
+                {
+                    "parent" : "1", 
+                    "descriptions" : [
+                        {
+                            "_id" : "30", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SERDEL NEW", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "3994.2400000000016", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERDEL-NEW                   ", 
+                            "amount" : 5500.0, 
+                            "date" : "2016-02-24", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "90", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SERDEL NEW", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "10314.74000000002", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERDEL NEW", 
+                            "amount" : 20644.0, 
+                            "date" : "2016-06-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ], 
+                    "tag" : "SERDEL NEW", 
+                    "isTxnRemoved" : false
+                }, 
+                {
+                    "parent" : "2", 
+                    "descriptions" : [
+                        {
+                            "_id" : "9", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "131692.64", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "NEFT", 
+                            "amount" : 70000.0, 
+                            "date" : "2016-01-08", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "36", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "ATN", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "1161.6400000000012", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "ATN", 
+                            "amount" : 5022.8, 
+                            "date" : "2016-02-25", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "49", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "MBCEV", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "20589.540000000015", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "MBCEV", 
+                            "amount" : 214.66, 
+                            "date" : "2016-04-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "50", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "LFCEV", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "20331.540000000015", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "LFCEV", 
+                            "amount" : 258.0, 
+                            "date" : "2016-04-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "38", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "MUMBAI", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "1749.640000000014", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "CMUMBAI", 
+                            "amount" : 220000.0, 
+                            "date" : "2016-02-29", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "51", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SERMAS", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "1493.5400000000154", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SERMAS", 
+                            "amount" : 18838.0, 
+                            "date" : "2016-04-04", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "68", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SURENDRA KR", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "1312.140000000014", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SURENDRA KR", 
+                            "amount" : 5217.0, 
+                            "date" : "2016-04-25", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "44", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "COBOM MUMBAI", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "501.340000000014", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "COBOM-MUMBAI", 
+                            "amount" : 114.5, 
+                            "date" : "2016-03-14", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "27", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "SIG VERIFIED", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "517.0400000000009", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "SIG VERIFIED                   ", 
+                            "amount" : 115.0, 
+                            "date" : "2016-02-15", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "61", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "DUPLICATE STS", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "4995.540000000015", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "DUPLICATE  STS", 
+                            "amount" : 115.0, 
+                            "date" : "2016-04-19", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "87", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "CONBAR VADODAR", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "41796.74000000002", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "CONBAR VADODAR", 
+                            "amount" : 575.0, 
+                            "date" : "2016-06-03", 
+                            "bankName" : "Bank Of Baroda"
+                        }, 
+                        {
+                            "_id" : "10", 
+                            "typeCategory" : "DEBIT", 
+                            "description" : "JAISHREE RADHEY", 
+                            "category" : "DEBIT VENDOR GROUP", 
+                            "balance" : "121669.84000000001", 
+                            "accountNumber" : "Transaction", 
+                            "originalDescription" : "JAISHREE RADHEY", 
+                            "amount" : 10022.8, 
+                            "date" : "2016-01-08", 
+                            "bankName" : "Bank Of Baroda"
+                        }
+                    ], 
+                    "tag" : "OTHER VENDORS", 
+                    "isTxnRemoved" : false
+                }
+            ], 
+            "emiBounce" : false, 
+            "branchName" : "", 
+            "abbValues" : {
+
+            }, 
+            "DEBIT VENDOR GROUP" : "448859.75999999995", 
+            "monthwiseDebitCreditCount" : {
+                "201606" : 6, 
+                "201605" : 15, 
+                "201602" : 22, 
+                "201601" : 16, 
+                "201604" : 24, 
+                "201603" : 8
+            }
+        }, 
+        "scoringResult" : {
+            "crgSlope" : "-0.0", 
+            "chqBounceRatio" : "0.0", 
+            "countOfGreaterThan50PercentRevenue" : "1", 
+            "countOfGreaterThan50PercentVendor" : "1", 
+            "investmentMatured" : "0.0", 
+            "emiRangeGreaterThan5" : false, 
+            "pos" : "0", 
+            "chequeSum" : "1531664.0", 
+            "paymentGateway" : "0.0", 
+            "sumCashDeposit" : "294000.0", 
+            "isOrganised" : true, 
+            "averageBankBalance" : "0.0", 
+            "sumVendor" : "448859.76", 
+            "minimum25CreditSideTransaction" : true, 
+            "multiplierCriteriaForCreditTrxn" : true, 
+            "multiplierCriteriaForCashTrxn" : true, 
+            "totalEmiLast6Months" : "0", 
+            "totalRentLast6Months" : "0", 
+            "numberOfCustomers" : "5", 
+            "numberOfVendors" : "3", 
+            "cashInfusion" : false, 
+            "retailMargin" : 0.107, 
+            "wholesaleMargin" : 0.107, 
+            "manufacturerMargin" : 0.107, 
+            "serviceMargin" : 0.0, 
+            "cashDepositFrequency" : 0.03333333333333333, 
+            "numOfPosMachine" : 0, 
+            "industryType" : "manufacturer", 
+            "obligation" : 71810.40654899091, 
+            "finalObligationsUsed" : [
+                18838.0, 
+                11460.0, 
+                10023.0, 
+                20643.6878882158, 
+                0.0, 
+                10845.718660775105
+            ], 
+            "appliedLoan" : 1000000.0, 
+            "incomeFromRuleEngine" : 211075.048, 
+            "containAssets" : false, 
+            "perLacEmi" : 9025.831234515723, 
+            "eligibilityBeforeEnhancement" : -678681.0, 
+            "enhancement" : 0.0, 
+            "finalEligibility" : -678681.0, 
+            "proposedObligation" : -61256.0, 
+            "rating" : 75.0, 
+            "finalResult" : {
+                "fullPathDescription" : [
+                    "Enhancers not FOUND so no Enhancement possible", 
+                    "Final Eligibility Calculation done check for Enhancements", 
+                    "Retailer not eligible for MicroMarket Logic", 
+                    "Minimum 25 CREDIT SIDE transaction Condition met moved to Eligibility calculator ", 
+                    "MINIMUM 6 CASH TRANSACTIONS in a month are there move to next check ", 
+                    "MINIMUM 4 CREDIT TRANSACTIONS in a month of CHQ POS ONLINE are there move to next check  ", 
+                    "emiDateRange <= 5 satisfied moved to next check", 
+                    "countOfGreaterThan50Percent > 6 satisfied moved to next check", 
+                    "chqBounceRatio < 5% satisfied moved to next check", 
+                    "crgSlope >= -0.25 satisfied moved to next check"
+                ], 
+                "matchingRuleNames" : [
+                    "F11", 
+                    "T10", 
+                    "F8", 
+                    "T7", 
+                    "T6", 
+                    "T5", 
+                    "T4", 
+                    "T3", 
+                    "T2", 
+                    "T1"
+                ]
+            }, 
+            "finalStatus" : "CLEARED"
+        }, 
+        "accountWiseTransaction" : {
+            "Transaction" : [
+                {
+                    "_id" : "1", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "29374.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 8022.8, 
+                    "date" : "2016-01-02", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "2", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BNC CDAR", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "33374.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BNC CDAR", 
+                    "amount" : 4000.0, 
+                    "date" : "2016-01-02", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "3", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SERBOM MUMBAI", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "15423.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERBOM MUMBAI", 
+                    "amount" : 17951.0, 
+                    "date" : "2016-01-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "4", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "HDB FINANCIAL", 
+                    "category" : "DEBIT EMI PAYMENT GROUP", 
+                    "balance" : "1692.6399999999994", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "HDB FINANCIAL", 
+                    "amount" : 13731.0, 
+                    "date" : "2016-01-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "5", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "SERDEL NEW", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "26692.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERDEL NEW", 
+                    "amount" : 25000.0, 
+                    "date" : "2016-01-07", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "6", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "SERDEL NEW", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "76692.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERDEL NEW", 
+                    "amount" : 50000.0, 
+                    "date" : "2016-01-08", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "7", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "131692.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BY INST", 
+                    "amount" : 55000.0, 
+                    "date" : "2016-01-08", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "8", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BY CASH", 
+                    "category" : "CREDIT CASH DEPOSIT GROUP", 
+                    "balance" : "201692.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BY CASH", 
+                    "amount" : 70000.0, 
+                    "date" : "2016-01-08", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "9", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "131692.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "NEFT", 
+                    "amount" : 70000.0, 
+                    "date" : "2016-01-08", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "10", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "JAISHREE RADHEY", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "121669.84000000001", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "JAISHREE RADHEY", 
+                    "amount" : 10022.8, 
+                    "date" : "2016-01-08", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "11", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "116647.04000000001", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 5022.8, 
+                    "date" : "2016-01-11", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "12", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "106624.24", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 10022.8, 
+                    "date" : "2016-01-11", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "13", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "96601.44", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 10022.8, 
+                    "date" : "2016-01-11", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "14", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SERBOM MUMBAI", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "85141.44", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERBOM MUMBAI", 
+                    "amount" : 11460.0, 
+                    "date" : "2016-01-11", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "15", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ECS JFSECS DBT", 
+                    "category" : "DEBIT EMI PAYMENT GROUP", 
+                    "balance" : "5141.440000000002", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ECS JFSECS DBT", 
+                    "amount" : 80000.0, 
+                    "date" : "2016-01-11", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "16", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "3118.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 2022.0, 
+                    "date" : "2016-01-12", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "17", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "JIND JIND", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "13118.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "JIND-JIND", 
+                    "amount" : 10000.0, 
+                    "date" : "2016-02-02", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "18", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BY CASH", 
+                    "category" : "CREDIT CASH DEPOSIT GROUP", 
+                    "balance" : "35118.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BY CASH", 
+                    "amount" : 22000.0, 
+                    "date" : "2016-02-03", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "19", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SERBOM MUMBAI", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "21387.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERBOM-MUMBAI", 
+                    "amount" : 13731.0, 
+                    "date" : "2016-02-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "20", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SERBOM MUMBAI", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "3436.6399999999994", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERBOM-MUMBAI", 
+                    "amount" : 17951.0, 
+                    "date" : "2016-02-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "21", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BNC CDAR", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "6936.639999999999", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BNC/CDAR", 
+                    "amount" : 3500.0, 
+                    "date" : "2016-02-09", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "22", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BNC CDAR", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "12336.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BNC/CDAR", 
+                    "amount" : 5400.0, 
+                    "date" : "2016-02-09", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "23", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "DUPLICATE", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "10962.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "DUPLICATE ", 
+                    "amount" : 1374.0, 
+                    "date" : "2016-02-09", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "24", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "STATEMENTCHGS", 
+                    "category" : "DEBIT BANK CHARGES GROUP", 
+                    "balance" : "10677.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "STATEMENT CHGS", 
+                    "amount" : 285.0, 
+                    "date" : "2016-02-10", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "25", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "9654.84", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 1022.8, 
+                    "date" : "2016-02-10", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "26", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "632.0400000000009", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 9022.8, 
+                    "date" : "2016-02-11", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "27", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SIG VERIFIED", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "517.0400000000009", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SIG VERIFIED                   ", 
+                    "amount" : 115.0, 
+                    "date" : "2016-02-15", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "28", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "JIND JIND", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "10517.04", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "JIND-JIND", 
+                    "amount" : 10000.0, 
+                    "date" : "2016-02-24", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "29", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "9494.240000000002", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 1022.8, 
+                    "date" : "2016-02-24", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "30", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SERDEL NEW", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "3994.2400000000016", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERDEL-NEW                   ", 
+                    "amount" : 5500.0, 
+                    "date" : "2016-02-24", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "31", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "SERDEL NEW", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "9494.240000000002", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERDEL-NEW                   ", 
+                    "amount" : 5500.0, 
+                    "date" : "2016-02-24", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "32", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "FUNDSINSUFFICIENT", 
+                    "category" : "DEBIT ADJUSTMENT GROUP", 
+                    "balance" : "9207.240000000002", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "FUNDS INSUFFICIENT", 
+                    "amount" : 287.0, 
+                    "date" : "2016-02-24", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "33", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "RETURNCHRG", 
+                    "category" : "DEBIT ADJUSTMENT GROUP", 
+                    "balance" : "6184.440000000001", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "RETURN CHRG", 
+                    "amount" : 3022.8, 
+                    "date" : "2016-02-24", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "34", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "1184.4400000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 5000.0, 
+                    "date" : "2016-02-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "35", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "CDAR", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "6184.440000000001", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "CDAR", 
+                    "amount" : 5000.0, 
+                    "date" : "2016-02-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "36", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATN", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "1161.6400000000012", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATN", 
+                    "amount" : 5022.8, 
+                    "date" : "2016-02-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "37", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "221749.64", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "RTGS", 
+                    "amount" : 220588.0, 
+                    "date" : "2016-02-29", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "38", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "MUMBAI", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "1749.640000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "CMUMBAI", 
+                    "amount" : 220000.0, 
+                    "date" : "2016-02-29", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "39", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BNC CDAR", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "19749.640000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BNC/CDAR", 
+                    "amount" : 18000.0, 
+                    "date" : "2016-03-03", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "40", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "BYCASH", 
+                    "category" : "DEBIT CASH WITHDRAWL GROUP", 
+                    "balance" : "1798.640000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BY CASH", 
+                    "amount" : 17951.0, 
+                    "date" : "2016-03-09", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "41", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "SERBOM MUMBAI", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "12298.640000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERBOM-MUMBAI", 
+                    "amount" : 10500.0, 
+                    "date" : "2016-03-10", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "42", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ECS/TP JFS", 
+                    "category" : "DEBIT EMI PAYMENT GROUP", 
+                    "balance" : "838.640000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ECS/TP JFS", 
+                    "amount" : 11460.0, 
+                    "date" : "2016-03-11", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "43", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "615.840000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 222.8, 
+                    "date" : "2016-03-11", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "44", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "COBOM MUMBAI", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "501.340000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "COBOM-MUMBAI", 
+                    "amount" : 114.5, 
+                    "date" : "2016-03-14", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "45", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "MINBALCHG", 
+                    "category" : "DEBIT BANK CHARGES GROUP", 
+                    "balance" : "1.404032445861958E-11", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "MIN BAL CHG", 
+                    "amount" : 501.34, 
+                    "date" : "2016-03-17", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "46", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "SERDEL NEW", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "12327.000000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERDEL NEW", 
+                    "amount" : 12327.0, 
+                    "date" : "2016-03-30", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "47", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "9804.200000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 2522.8, 
+                    "date" : "2016-04-02", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "48", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BY CASH", 
+                    "category" : "CREDIT CASH DEPOSIT GROUP", 
+                    "balance" : "20804.200000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BY CASH", 
+                    "amount" : 11000.0, 
+                    "date" : "2016-04-02", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "49", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "MBCEV", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "20589.540000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "MBCEV", 
+                    "amount" : 214.66, 
+                    "date" : "2016-04-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "50", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "LFCEV", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "20331.540000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "LFCEV", 
+                    "amount" : 258.0, 
+                    "date" : "2016-04-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "51", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SERMAS", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "1493.5400000000154", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERMAS", 
+                    "amount" : 18838.0, 
+                    "date" : "2016-04-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "52", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "CDAR", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "18793.540000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "CDAR", 
+                    "amount" : 17300.0, 
+                    "date" : "2016-04-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "53", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "DUPLICATE", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "18678.540000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "TO DUPLICATE", 
+                    "amount" : 115.0, 
+                    "date" : "2016-04-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "54", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SERBOM MUMBAI", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "727.5400000000154", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERBOM-MUMBAI", 
+                    "amount" : 17951.0, 
+                    "date" : "2016-04-05", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "55", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "CDAR", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "12227.540000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "CDAR", 
+                    "amount" : 11500.0, 
+                    "date" : "2016-04-08", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "56", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SERBOM MUMBAI", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "767.5400000000154", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERBOM-MUMBAI", 
+                    "amount" : 11460.0, 
+                    "date" : "2016-04-11", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "57", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "244.74000000001547", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 522.8, 
+                    "date" : "2016-04-11", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "58", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "233.34000000001546", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM ", 
+                    "amount" : 11.4, 
+                    "date" : "2016-04-18", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "59", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "110.54000000001547", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM ", 
+                    "amount" : 122.8, 
+                    "date" : "2016-04-18", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "60", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BY CASH", 
+                    "category" : "CREDIT CASH DEPOSIT GROUP", 
+                    "balance" : "5110.540000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BY CASH", 
+                    "amount" : 5000.0, 
+                    "date" : "2016-04-19", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "61", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "DUPLICATE STS", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "4995.540000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "DUPLICATE  STS", 
+                    "amount" : 115.0, 
+                    "date" : "2016-04-19", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "62", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "3972.7400000000152", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 1022.8, 
+                    "date" : "2016-04-21", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "63", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SIGVERCHG", 
+                    "category" : "DEBIT BANK CHARGES GROUP", 
+                    "balance" : "3857.7400000000152", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SIG VER CHG", 
+                    "amount" : 115.0, 
+                    "date" : "2016-04-22", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "64", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "2334.940000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 1522.8, 
+                    "date" : "2016-04-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "65", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "1312.140000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 1022.8, 
+                    "date" : "2016-04-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "66", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "217529.14", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "RTGS", 
+                    "amount" : 216217.0, 
+                    "date" : "2016-04-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "67", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SELF", 
+                    "category" : "DEBIT CASH WITHDRAWL GROUP", 
+                    "balance" : "6529.140000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SELF", 
+                    "amount" : 211000.0, 
+                    "date" : "2016-04-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "68", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SURENDRA KR", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "1312.140000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SURENDRA KR", 
+                    "amount" : 5217.0, 
+                    "date" : "2016-04-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "69", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "DUPLICATE", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "1197.140000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "TO DUPLICATE", 
+                    "amount" : 115.0, 
+                    "date" : "2016-04-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "70", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "TRNS", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "6197.140000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "TRNS", 
+                    "amount" : 5000.0, 
+                    "date" : "2016-04-30", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "71", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "4174.340000000014", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 2022.8, 
+                    "date" : "2016-05-03", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "72", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BNC CDAR", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "18174.340000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BNC CDAR", 
+                    "amount" : 14000.0, 
+                    "date" : "2016-05-03", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "73", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "SWT", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "19174.340000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SWT", 
+                    "amount" : 1000.0, 
+                    "date" : "2016-05-03", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "74", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ECS HDB", 
+                    "category" : "DEBIT EMI PAYMENT GROUP", 
+                    "balance" : "336.3400000000147", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ECS HDB", 
+                    "amount" : 18838.0, 
+                    "date" : "2016-05-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "75", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "CDAR", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "11836.340000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "CDAR", 
+                    "amount" : 11500.0, 
+                    "date" : "2016-05-09", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "76", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ECS TP JFS DBT", 
+                    "category" : "DEBIT EMI PAYMENT GROUP", 
+                    "balance" : "376.3400000000147", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ECS TP JFS DBT", 
+                    "amount" : 11460.0, 
+                    "date" : "2016-05-10", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "77", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BY CASH", 
+                    "category" : "CREDIT CASH DEPOSIT GROUP", 
+                    "balance" : "29376.340000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BY CASH", 
+                    "amount" : 29000.0, 
+                    "date" : "2016-05-17", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "78", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SELF", 
+                    "category" : "DEBIT CASH WITHDRAWL GROUP", 
+                    "balance" : "376.3400000000147", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SELF", 
+                    "amount" : 29000.0, 
+                    "date" : "2016-05-17", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "79", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "DUPLICATE", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "261.3400000000147", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "DUPLICATE", 
+                    "amount" : 115.0, 
+                    "date" : "2016-05-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "80", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "KAITHA KAITHA", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "15261.340000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "KAITHA KAITHA", 
+                    "amount" : 15000.0, 
+                    "date" : "2016-05-25", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "81", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "9238.540000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 6022.8, 
+                    "date" : "2016-05-26", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "82", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "8238.540000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 1000.0, 
+                    "date" : "2016-05-30", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "83", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "DUPLICSTESTSTCHRG", 
+                    "category" : "DEBIT BANK CHARGES GROUP", 
+                    "balance" : "7894.540000000015", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "DUPLICSTE STST CHRG", 
+                    "amount" : 344.0, 
+                    "date" : "2016-05-30", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "84", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "ATM", 
+                    "category" : "DEBIT ATM WITHDRAWL GROUP", 
+                    "balance" : "871.7400000000152", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "ATM", 
+                    "amount" : 7022.8, 
+                    "date" : "2016-05-30", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "85", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "BY CASH", 
+                    "category" : "CREDIT CASH DEPOSIT GROUP", 
+                    "balance" : "10871.740000000016", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BY CASH", 
+                    "amount" : 10000.0, 
+                    "date" : "2016-05-31", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "86", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "SERDEL NEW", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "42371.74000000002", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERDEL NEW", 
+                    "amount" : 31500.0, 
+                    "date" : "2016-06-03", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "87", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "CONBAR VADODAR", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "41796.74000000002", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "CONBAR VADODAR", 
+                    "amount" : 575.0, 
+                    "date" : "2016-06-03", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "88", 
+                    "typeCategory" : "CREDIT", 
+                    "description" : "", 
+                    "category" : "CREDIT REVENUE GROUP", 
+                    "balance" : "49796.74000000002", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "BY TRANSFER", 
+                    "amount" : 8000.0, 
+                    "date" : "2016-06-03", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "89", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SERBOM-MUMBAI ECS HDB", 
+                    "category" : "DEBIT EMI PAYMENT GROUP", 
+                    "balance" : "30958.74000000002", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERBOM-MUMBAI ECS HDB", 
+                    "amount" : 18838.0, 
+                    "date" : "2016-06-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "90", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "SERDEL NEW", 
+                    "category" : "DEBIT VENDOR GROUP", 
+                    "balance" : "10314.74000000002", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "SERDEL NEW", 
+                    "amount" : 20644.0, 
+                    "date" : "2016-06-04", 
+                    "bankName" : "Bank Of Baroda"
+                }, 
+                {
+                    "_id" : "91", 
+                    "typeCategory" : "DEBIT", 
+                    "description" : "HDFC BANK LTD LOAN AC", 
+                    "category" : "DEBIT EMI PAYMENT GROUP", 
+                    "balance" : "291.7400000000198", 
+                    "accountNumber" : "Transaction", 
+                    "originalDescription" : "HDFC BANK LTD LOAN AC", 
+                    "amount" : 10023.0, 
+                    "date" : "2016-06-04", 
+                    "bankName" : "Bank Of Baroda"
+                }
+            ]
+        }, 
+        "accountTypes" : {
+            "Transaction" : "Transaction"
+        }
+    }, 
+    "formSubmitDone" : false, 
+    "createdBy" : "System", 
+    "lastModifiedBy" : "System", 
+    "finalSubmitDone" : true
+}

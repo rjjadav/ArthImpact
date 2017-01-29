@@ -1,0 +1,90 @@
+#offerings{
+	.section-heading {
+		text-transform: uppercase;
+		color: $color-6;
+		font-weight: 700;
+		font-family: 'HelveticaNeue-Condensed', Arial, sans-serif !important;
+	}
+	.quote-section{
+		height: 500px;
+		/*min-height: calc(100vh - 90px);*/
+		min-height: 500px;
+		/*max-height: 500px;*/
+		background : $color-6;
+		color: #fff;
+		font-size: 17px;
+		padding-top: 50px;
+
+		p{
+			font-size: 22px;
+			color: #fff;
+			text-align: center;
+			/*margin-top: 30px;*/
+		}
+
+		h2{
+			font-size: 35px;
+		}
+	}
+
+	.approach-section{
+		color: $color-7;
+		.approach-head{
+			font-weight: 700;
+		}
+		.approach-content{
+			font-size: 24px;
+		}
+	}
+
+	.offerings-section{
+		color: $color-7;
+	}
+
+
+	.product-description{
+		font-size: 17px;
+	}
+	/*.product-title, .product-description{
+		color: $color-7;
+	}*/
+
+	.products-section{
+		.product{
+			.product-tagline{
+				text-transform: uppercase;
+				color: $color-6;
+				font-weight: 700;
+				/*font-family: 'HelveticaNeue-Condensed', Arial, sans-serif !important;*/
+			}
+
+			.product-title{
+				border-top: 4px solid $color-7;
+				border-bottom: 4px solid $color-7;
+				color: $color-7;
+				text-transform: uppercase;
+				margin: 5px 0px;
+				padding: 5px 0px;
+				font-weight: 700;
+				font-size: 36px;
+			}
+
+			.product-description{
+				color: $color-7;
+				font-size: 17px;
+				margin-top: 30px;
+				font-weight: 500;
+			}
+
+			.round-button{
+				&.product{
+					color: $color-6 !important;
+					border-color: $color-6 !important;
+					margin-left: 0px;
+					margin-top: 30px;
+				}
+			}
+		}
+		
+	}
+}

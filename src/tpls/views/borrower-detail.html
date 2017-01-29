@@ -1,0 +1,72 @@
+
+<md-dialog aria-label="Mango (Fruit)" id="borrowr-details">
+
+
+		<!-- <md-toolbar>
+			<div class="md-toolbar-tools">
+				<h2>View Details</h2>
+				<span flex></span>
+				<md-button class="md-icon-button" ng-click="cancel()">
+					&times;
+				</md-button>
+			</div>
+		</md-toolbar> -->
+
+	<md-dialog-content layout="column" layout-padding class="ml-30">
+	<div layout="column" class="group-details">
+		<h3 layout="row">
+			{{group.groupName}}
+			<span flex></span>
+			<md-button class="md-icon-button" ng-click="cancel()">
+				&times;
+			</md-button>	
+		</h3>
+		<div>Branch : {{group.branchName}}</div>
+		<div>Need a loan of  {{group.totalAmount}}</div>
+		<div>Group risk value : {{group.groupRiskValue || borrower[0].risk.riskValue}}</div>
+		<div>
+			<md-button class="md-raised md-primary mt-20 ml-0" ng-click="lendToBorrower(group,true)">Offer Loan</md-button>
+		</div>
+	</div>
+
+	<h3>Details of the group</h3>
+	<div layout="row" layout-wrap class="borrowers-list">
+		<div layout="column" flex="30" ng-repeat="borrow in  borrower" class="borrower">
+			<div>{{borrow.name}}</div>
+			<div>Risk Value : {{borrow.risk.riskValue}}</div>
+			<div>Loan required : {{borrow.loanAmount}}</div>
+		</div>
+	</div>
+
+
+
+		<!-- <div class="md-dialog-content" >
+			<md-card ng-repeat="borrow in  borrower">
+			<md-card-content>
+				<ul >
+				<li><label>Name:</label> <span>{{borrow.name}}</span></li>
+				<li><label>Address:</label> <span>{{borrow.address}}</span></li>
+				<li><label>Amount:</label> <span>{{borrow.loanAmount}}</span></li>
+				<li><label>Loan Type :</label> <span>{{borrow.loanType}}</span></li>
+			</ul>
+			</md-card-content>
+
+		</md-card>
+
+		</div> -->
+	</md-dialog-content>
+
+		<!--<md-dialog-actions layout="row">
+			<md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+				More on Wikipedia
+			</md-button>
+			<span flex></span>
+			<md-button ng-click="answer('not useful')">
+			 Not Useful
+			</md-button>
+			<md-button ng-click="answer('useful')">
+				Useful
+			</md-button>
+		</md-dialog-actions>-->
+
+</md-dialog>

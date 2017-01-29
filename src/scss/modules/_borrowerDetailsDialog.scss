@@ -1,0 +1,22 @@
+#borrowr-details{
+	color: $color-7;
+
+	h3{
+		font-weight: 700 !important;
+	}
+
+	.group-details{
+		div{
+			font-weight: 700 !important;
+		}
+	}
+
+	.borrowers-list{
+		.borrower{
+			margin-top: 30px;
+			div{
+				font-weight: 600;
+			}
+		}
+	}
+}

@@ -1,0 +1,147 @@
+<md-content layout="column" id="login">
+<div layout="row" layout-sm="column" layout-xs="column" layout-fill layout-padding>
+<div flex="50" flex-sm="100" flex-xs="100" layout="column">
+	<h3>Login</h3>
+	<form name="loginForm" flex layout="column">
+		<md-input-container >
+			<label>Email</label>
+			<input type="text" name="email" ng-model="login.partnerLogin.username" required />
+		</md-input-container>
+		<md-input-container>
+			<label>Password</label>
+			<input type="password" name="password" ng-model="login.partnerLogin.password" required />
+		</md-input-container>
+		<md-button class="md-accent md-raised" ng-click="login.loginPartner(login.partnerLogin)">
+			Login
+		</md-button>
+	</form>
+</div>
+
+
+<!-- <div flex="50" flex-sm="100" flex-xs="100" layout="column">
+	<h3>Registration</h3>
+	<form name="registrationForm" flex layout="column">
+		<md-input-container>
+			<label>Name</label>
+			<input type="text" name="pname" ng-model="login.partnerDetails.account.name" required/>
+			<div ng-if='registrationForm.pname.$dirty || registrationForm.pname.$touched' ng-messages='registrationForm.pname.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container class="md-block" >
+			<label>Email</label>
+			<input name="email" ng-model="login.partnerDetails.account.email" required ng-pattern="/^.+@.+\..+$/" />
+			<div ng-messages='registrationForm.email.$error'  md-auto-hide="false">
+				<div ng-message='required'> Please fill out this field</div>
+				<div ng-message='pattern'> Please enter valid Email Address</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Mobile</label>
+			<input type="text" name="mobile" ng-model="login.partnerDetails.account.mobile" required/>
+			<div ng-messages='registrationForm.mobile.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Date Of Birth</label>
+			<md-datepicker ng-model="login.partnerDetails.account.dob" name="dateField" md-min-date="login.minDate" md-max-date="login.maxDate" md-open-on-focus required></md-datepicker>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Password</label>
+			<input type="password" name="password" ng-model="login.partnerDetails.account.password" required>
+			<div ng-messages='registrationForm.password.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Company Name</label>
+			<input type="text" name="companyName" ng-model="login.partnerDetails.partner.companyName" required>
+			<div ng-messages='registrationForm.companyName.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>CIN</label>
+			<input type="text" name="cin" ng-model="login.partnerDetails.partner.cin" required>
+			<div ng-messages='registrationForm.companyName.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Company PAN</label>
+			<input type="text" name="companyPan" ng-model="login.partnerDetails.partner.companyPan" required>
+			<div ng-messages='registrationForm.companyPan.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Date Of Incorporation</label>
+			<md-datepicker ng-model="login.partnerDetails.partner.dateOfInCorporation"  md-open-on-focus required name="dateOfInCorporation"></md-datepicker>
+			<div ng-messages='registrationForm.dateOfInCorporation.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Chair Person Name</label>
+			<input type="text" name="chairPersonName" ng-model="login.partnerDetails.partner.chairPersonName" required>
+			<div ng-messages='registrationForm.chairPersonName.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Chair Person PAN</label>
+			<input type="text" name="chairPersonPan" ng-model="login.partnerDetails.partner.chairPersonPan" required>
+			<div ng-messages='registrationForm.chairPersonPan.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>DIN</label>
+			<input type="text" name="din" ng-model="login.partnerDetails.partner.din" required>
+			<div ng-messages='registrationForm.din.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Registered Email</label>
+			<input type="text" name="registeredEmailId" ng-model="login.partnerDetails.partner.registeredEmailId" ng-pattern="/^.+@.+\..+$/" required>
+			<div ng-messages='registrationForm.registeredEmailId.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+				<div ng-message='pattern'> Please enter valid Email Address</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Registered Address</label>
+			<input type="text" name="registeredAddress" ng-model="login.partnerDetails.partner.registeredAddress" required>
+			<div ng-messages='registrationForm.registeredAddress.$error'>
+				<div ng-message='required'> Please fill out this field</div>
+			</div>
+		</md-input-container>
+
+		<md-button class="md-accent md-raised" ng-disabled="!registrationForm.$valid || login.regisrationLoading" ng-click="login.registerPartner(login.partnerDetails)">
+			Register
+			<div class="small-spinner">
+				<md-progress-circular md-mode='indeterminate' class="md-accent" md-diameter="20" ng-if="login.regisrationLoading">
+				</md-progress-circular>	
+			</div>
+		</md-button>
+	</form>
+</div> -->
+</div>
+	
+<ng-include src="'tpls/partials/footer.html'"></ng-include>
+</md-content>

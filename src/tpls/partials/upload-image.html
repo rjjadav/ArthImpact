@@ -1,0 +1,17 @@
+<md-dialog flex="50" layout="column" layout-padding>
+	
+	<h1>Upload Image</h1>
+	<div class="drop-zone font-size-30" layout="column" layout-align="center center" ng-mouseenter="hovering = true" ng-mouseleave="hovering = false" ng-class="{'md-whiteframe-3dp': hovering}" ngf-select="upload.uploadFile(upload.imageFile)" ng-model="upload.imageFile">
+		<i class="fa fa-cloud-upload" aria-hidden="true"></i>
+		Select Image
+	</div>
+	<div layout="row" layout-align="center center">
+		<md-button class="md-primary md-raised ph-50" ng-disabled="!upload.dataToSend.image  || upload.loading" ng-click="upload.updateGroup(upload.dataToSend)">
+			Upload
+			<div class="small-spinner">
+				<md-progress-circular md-mode='indeterminate' class="md-accent" md-diameter="20" ng-if="upload.loading">
+				</md-progress-circular>	
+			</div>
+		</md-button>
+	</div>
+</md-dialog>

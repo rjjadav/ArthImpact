@@ -1,0 +1,116 @@
+md-dialog{
+  width:800px;
+  md-card.md-default-theme{
+      background:#fff;
+      ul{
+        list-style: none;
+        li{
+          display:table;
+          width:100%;
+          label{
+            display:table-cell;
+            width:20%;
+          }
+          span{
+            display:table-cell;
+            width:80%;
+          }
+        }
+      }
+  }
+}
+.dashboard{
+  .dashboard-header{
+    width:100%;
+    font-size:3em;
+    padding-left:3%;
+    .create-button{
+      padding-right:3%;
+        float:right;
+        md-button{
+          border: 1px solid;
+          min-height: 20px;
+          height: 25px;
+          padding: 4px;
+          line-height: normal;
+        }
+    }
+  }
+  .dashboard-content{
+    width:100%;
+    /*padding-left:3%;*/
+    h3{
+      margin: 10px 10px !important;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      background: #ccc !important;
+      border-radius: 5px;
+    }
+    .about-au-tot{
+          height: 100px;
+          float:left;
+      .about-au{
+        width: 60%;
+        float: left;
+        h3{
+          font-weight:600;
+          font-size:2em;
+
+        }
+        p{
+          font-weight:600;
+          font-size:14px;
+        }
+      }
+      .lend-directly{
+          padding-right:3%;
+          float:right;
+          width: 20%;
+          padding-top: 2%;
+      }
+    }
+    .content-shw{
+      display:table;
+      width:100%;
+      .group-list{
+        display:table-cell;
+        float:left;
+        width:25%;
+        md-content{
+          div{
+            ul{
+              padding:10px;
+            }
+          }
+        }
+        ul{
+          list-style: none;
+        }
+
+        
+      }
+    }
+  }
+
+  /*.md-container {
+    background-color: rgb(179,229,252) !important;
+  }
+  .md-bar {
+      background-color: rgb(3,155,229) !important;
+  }*/
+}
+
+.star {
+          padding: 1px;
+          color: #ddd;
+          font-size: 20px;
+          text-shadow: .05em .05em #aaa;
+          list-style-type: none;
+          display: inline-block;
+          cursor: pointer;
+
+          &.filled {
+            color: #fd0;
+          }
+        }

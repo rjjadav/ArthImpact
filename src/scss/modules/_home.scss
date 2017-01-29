@@ -1,0 +1,159 @@
+#home{
+	height: 100%;
+	background: #fff !important;
+
+	.section-bg{
+		background: url(../assets/images/image3.jpg);
+		position: relative;
+		width: 100%;
+		/*margin-top: -128px;*/
+		/*bottom: 0;*/
+		background-position: 50% 40%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.9;
+		height: 100vh;
+		min-height: 100vh;
+
+		.banner-header{
+			text-transform: uppercase !important;
+		}
+
+		p{
+			font-size: 19px;
+			color: #fff;
+			text-align: center;
+		}
+
+		md-divider {
+			text-align: center;
+			border-color: #d45851;
+			border-top-width: 3px;
+			max-width: 50px;
+			margin : 15px 0;
+		}
+
+		.layer{
+			background-color: rgba(0, 0, 0, 0.3);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	
+		h3{
+			font-size: 45px;
+			color: #fff;
+			/*text-transform: uppercase;*/
+			text-align: center;
+			font-weight: 700;
+		}
+
+		.banner-description{
+			font-size: 17px;
+			color: #fff;
+			text-align: center;
+		}
+		.get-started{
+			color: #fff !important;
+			padding: 0 20px;
+			margin-top: 30px;
+		}
+	}
+
+	.product-purpose{
+		color: $color-7;
+
+		p{
+			font-size: 17px;
+			text-align: center;
+		}
+
+		.read-more{
+			text-transform: none !important;
+		}
+	}
+
+	.products-section{
+		.product{
+			.product-tagline{
+				text-transform: uppercase;
+				color: $color-6;
+				font-weight: 700;
+			}
+
+			.product-title{
+				border-top: 4px solid $color-7;
+				border-bottom: 4px solid $color-7;
+				color: $color-7;
+				text-transform: uppercase;
+				margin: 5px 0px;
+				padding: 5px 0px;
+				font-weight: 700;
+			}
+
+			.product-description{
+				color: $color-7;
+				font-size: 17px;
+				margin-top: 30px;
+			}
+
+			.round-button{
+				&.product{
+					color: $color-6 !important;
+					border-color: $color-6 !important;
+					margin-left: 0px;
+					margin-top: 30px;
+				}
+			}
+		}
+		
+	}
+
+	.contact-us-section{
+		min-height: 500px;
+		max-height: 500px;
+		height: 500px;
+		border-top: 3px solid $color-6;
+		border-bottom: 3px solid $color-6;
+		background-color: $color-6;
+		.logo-section{
+			
+			height: 100%;
+		}
+
+		.contact-us-text{
+			h3{
+				/*text-transform: uppercase;*/
+				color : #fff;
+				text-align: center;
+				font-weight: 700;
+				/*font-size: 36px;*/
+			}
+		}
+	}
+
+	/*.section-header { 
+		position: relative;
+		z-index: 1;
+		text-transform: uppercase;
+		color: $color-6;
+		font-weight: 700;
+
+		&:before {
+			border-top: 4px solid $color-6;
+			content:"";
+			margin: 0 auto;
+			position: absolute;
+			top: 50%; left: 0; right: 0; bottom: 0;
+			width: 100%;
+			z-index: -1;
+		}
+
+		span {
+			background: #fff; 
+			padding: 0 50px; 
+		}
+	}*/
+}

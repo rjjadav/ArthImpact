@@ -1,0 +1,71 @@
+<md-content layout="column">
+	<div layout="row" layout-margin>
+		<h1>Arth</h1>
+		<span flex></span>
+		<md-button class="mdbutton">Create new user</md-button>
+		<md-button class="mdbutton">Profile</md-button>
+	</div>
+
+	<md-card layout="row" layout-align="center center" flex>
+		<md-card-content layout="row" layout-align="center center" flex>
+			 <nvd3 options="gd.options" data="gd.data"></nvd3>
+		</md-card-content>
+	</md-card>
+
+
+	<div layout="column" layout-margin flex>
+		<h1 class="text-center">Amort</h1>
+		<md-list flex>
+			<md-list-item>
+				<div layout="row" layout-xs="column" layout-sm="column" flex layout-align="center center">
+					<span flex="15">
+						<Strong>Sr No.</Strong>
+					</span>
+					<span flex="15">
+						<Strong>Date</Strong>
+					</span>
+					<span flex="15">
+						<strong>Payment</strong>
+					</span>
+					<span flex="15">
+						<strong>Interest</strong>
+					</span>
+					<span flex="15">
+						<strong>Principle</strong>
+					</span>
+					<span flex="15">
+						<strong>Balance</strong>
+					</span>
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+			<md-list-item ng-repeat="amort in gd.amortSchedule" ng-click="null">
+				<div layout="row" layout-xs="column" layout-sm="column" flex layout-align="center center">
+					<span flex="15">
+						{{$index}}
+					</span>
+					<span flex="15">
+						{{amort.date | date: 'dd-MM-yyyy'}}
+					</span>
+					<span flex="15">
+						{{amort.payment}}
+					</span>
+					<span flex="15">
+						{{amort.interest}}
+					</span>
+					<span flex="15">
+						{{amort.principle}}
+					</span>
+					<span flex="15">
+						{{amort.balance}}
+					</span>
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+		</md-list>
+	</div>
+
+	<md-card layout-padding flex>
+		<h1>Testimonials</h1>
+	</md-card>
+</md-content>

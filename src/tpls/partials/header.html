@@ -1,0 +1,29 @@
+<div layout="row" flex layout-align="center center" class="full-height">
+	<div class="md-toolbar-tools" flex="90" flex-sm="100" flex-xs="100">
+		<img src="assets/images/Asset 6.png" class="logo small-logo" ui-sref="app.home">
+		<img src="assets/images/arthwhite-white.png" class="logo large-logo" ui-sref="app.home">
+		<span flex></span>
+
+		<!-- <md-button class="md-primary">Meet The Team</md-button> -->
+		<md-button class="md-primary" ui-sref="app.offerings" ng-hide="isPartner">Offerings</md-button>
+		<md-button class="md-primary" ui-sref="app.dashboard" ng-show="isLoggedin && !isPartner">Open Loans</md-button>
+		<md-button class="md-primary" ui-sref="app.lender.dashboard" ng-show="isLoggedin && !isPartner">Dashboard</md-button>
+		<md-button class="md-icon-button" aria-label="Settings" href="https://www.facebook.com/arthimpact/">
+			<i class="fa fa-facebook"></i>
+		</md-button>
+		<md-button class="md-icon-button" aria-label="Settings" href="https://twitter.com/arthimpact">
+			<i class="fa fa-twitter"></i>
+		</md-button>
+		<md-button class="md-icon-button md-primary" aria-label="Settings" href="https://www.linkedin.com/company/arthimpact">
+			<i class="fa fa-linkedin"></i>
+		</md-button>
+
+		<!-- <md-button class="md-primary">News & Updates</md-button> -->
+		
+
+		<md-button class="md-primary" ui-sref="app.partner.groups" ng-show="isLoggedin && isPartner">Groups</md-button>
+		<md-button class="md-primary" ui-sref="app.partner.borrowers" ng-show="isLoggedin && isPartner">Borrowers</md-button>
+		<md-button class="md-primary" ui-sref="app.login" ng-hide="isLoggedin">Sign In</md-button>
+		<md-button class="md-primary" ng-click="toolbar.logout()" ng-show="isLoggedin">Logout</md-button>
+	</div>
+</div>

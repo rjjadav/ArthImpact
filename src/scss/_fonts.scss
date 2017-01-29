@@ -1,0 +1,37 @@
+@include font-face('generica', '../assets/fonts/generica', $file-formats: eot woff ttf svg);
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../assets/fonts/HelveticaNeue.eot');
+    src: url('../assets/fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/HelveticaNeue.woff') format('woff'), url('../assets/fonts/HelveticaNeue.ttf') format('truetype');
+}
+
+/*@font-face {
+    font-family: 'Helvetica Neue Light';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/HelveticaNeue-Light.eot');*/
+    /* IE9 Compat Modes */
+    /*src: url('../font/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),*/ /* IE6-IE8 */
+    /*url('../font/HelveticaNeue-Light.woff') format('woff'),*/ /* Modern Browsers */
+    /*url('../font/HelveticaNeue-Light.ttf') format('truetype'),*/ /* Safari, Android, iOS */
+    /*url('../font/HelveticaNeue-Light.svg#svgFontName') format('svg');*/
+    /* Legacy iOS */
+/*}*/
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../assets/fonts/HelveticaNeue-Bold.eot');
+    src: url('../assets/fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/HelveticaNeue-Bold.woff') format('woff'), url('../assets/fonts/HelveticaNeue-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Condensed';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../assets/fonts/HelveticaNeue-CondensedBold.eot');
+    src: url('../assets/fonts/HelveticaNeue-CondensedBold.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/HelveticaNeue-CondensedBold.woff') format('woff'), url('../assets/fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+}

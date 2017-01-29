@@ -1,0 +1,31 @@
+<md-content layout="row" layout-margin layout-align="center center">
+<div flex="60" flex-sm="100" flex-xs="100">
+	<div layout="column" class="mt-30">
+		<md-switch ng-model="gd.status" aria-label="Switch 1">
+			Enable Group
+		</md-switch>
+	</div>
+
+	<div ng-if="gd.status">
+		<div class="drop-zone font-size-30" layout="column" layout-align="center center" ng-mouseenter="hovering = true" ng-mouseleave="hovering = false" ng-class="{'md-whiteframe-3dp': hovering}" ngf-select="gd.uploadFile(gd.imageFile)" ng-model="gd.imageFile">
+			<i class="fa fa-cloud-upload" aria-hidden="true"></i>
+			Select Image
+		</div>
+
+		<div layout="column">
+			<h4>Uploaded Image</h4>
+			<div>
+				<img src="{{gd.groupDetails.image}}" style="height:200px;">
+			</div>
+		</div>
+	</div>
+
+	<md-button class="md-primary md-raised ph-60" ng-click="gd.saveGroup(gd.groupDetails)" ng-if="gd.status" ng-disabled="gd.loading">
+		Save Group
+		<div class="small-spinner" ng-if="gd.loading">
+			<md-progress-circular md-mode='indeterminate' class="md-accent" md-diameter="20">
+			</md-progress-circular>	
+		</div>
+	</md-button>
+</div>
+</md-content>

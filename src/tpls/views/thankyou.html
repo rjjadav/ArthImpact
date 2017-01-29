@@ -1,0 +1,27 @@
+<div class="thankyou" ng-if="loaded">
+
+  <md-card ng-if="success">
+    <md-title>
+      <h2 ng-if="success">Thank You for the payment</h2>
+      <h1 ng-if="!success">Sorry, your payment could not go through</h1>
+      <span flex></span>
+      <!-- <md-button class="mdbutton" ui-sref="dashboard">Dashboard</md-button>
+      <md-button class="mdbutton" ui-sref="lender.dashboard">Lender Dashboard</md-button> -->
+    </md-title>
+      <md-content>
+        <ul>
+          <li><label>Name:</label> <span>{{detail.payment.buyer_name}}</span></li>
+          <li><label>Amount:</label> <span>{{detail.payment.amount}}</span></li>
+          <li><label>Payment Id:</label> <span>{{detail.payment.payment_id}}</span></li>
+          <li><label>Status:</label> <span>{{detail.payment.status}}</span></li>
+          <li><label>Purpose:</label> <span>{{detail.purpose}}</span></li>
+        </ul>
+      </md-content>
+  </md-card>
+
+
+  <div ng-if="bankAdded == false">
+    
+    
+  </div>
+</div>
